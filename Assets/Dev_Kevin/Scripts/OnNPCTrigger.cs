@@ -2,12 +2,30 @@ using UnityEngine;
 
 public class OnNPCTrigger : MonoBehaviour
 {
-    // Reference to the "PressKeyToInteract" GameObject
-    public GameObject interactKey;
+    // Public variable to select the interaction key
+    public InteractionKey selectedInteractionKey;
+
+    // Define an enum to select the interaction key from a list
+    public enum InteractionKey
+    { PressKeyToInteract }
+
+    // Reference to the GameObject for the selected interaction key
+    private GameObject interactKey;
 
     private void Start()
     {
-        interactKey.SetActive(false);
+        // Use the selected enum value to find the GameObject
+        interactKey = GameObject.Find(selectedInteractionKey.ToString());
+
+        // Check if the GameObject was found
+        if (interactKey != null)
+        {
+            interactKey.SetActive(false); // Initially disable it
+        }
+        else
+        {
+            Debug.LogWarning(selectedInteractionKey.ToString() + " not found!");
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -17,7 +35,7 @@ public class OnNPCTrigger : MonoBehaviour
         {
             Debug.Log("Player is in the trigger area!");
 
-            // Enable the "PressKeyToInteract" GameObject
+            // Enable the GameObject associated with the selected interaction key
             if (interactKey != null)
             {
                 interactKey.SetActive(true);
@@ -32,7 +50,7 @@ public class OnNPCTrigger : MonoBehaviour
         {
             Debug.Log("Player left the trigger area!");
 
-            // Disable the "PressKeyToInteract" GameObject
+            // Disable the GameObject associated with the selected interaction key
             if (interactKey != null)
             {
                 interactKey.SetActive(false);
