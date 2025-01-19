@@ -1,21 +1,31 @@
 using UnityEngine;
 
+/// <summary>
+/// A manager class that sets the initial game state to Exploration at the start of the game.
+/// It relies on the GameStateSO ScriptableObject to manage the game's current state.
+/// </summary>
 public class GameManager : MonoBehaviour
 {
     [Header("Game State Settings")]
-    [SerializeField] private GameStateSO gameStateSO;  // Référence au ScriptableObject GameStateSO
+    [SerializeField] private GameStateSO gameStateSO;
 
+    // Reference to the ScriptableObject that holds the game's state.
+
+    /// <summary>
+    /// Called when the game starts. Sets the initial game state to Exploration.
+    /// </summary>
     private void Start()
     {
         if (gameStateSO != null)
         {
-            // Définit l'état actuel à Exploration au démarrage
+            // Set the current game state to Exploration at the start of the game.
             gameStateSO.currentState = GameStateSO.GameState.Exploration;
-            Debug.Log("Game state initialisé à : " + gameStateSO.currentState);
+            Debug.Log("Game state initialized to: " + gameStateSO.currentState);
         }
         else
         {
-            Debug.LogWarning("Le GameStateSO n'est pas assigné dans l'inspecteur !");
+            // Log a warning if the GameStateSO reference is not assigned in the inspector.
+            Debug.LogWarning("GameStateSO is not assigned in the inspector!");
         }
     }
 }
