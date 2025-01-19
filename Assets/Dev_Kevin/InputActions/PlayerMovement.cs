@@ -1,63 +1,63 @@
 using UnityEngine;
-using UnityEngine.AI; // N'oubliez pas d'ajouter cette référence pour utiliser NavMeshAgent
+using UnityEngine.AI; // Don't forget to add this reference to use NavMeshAgent
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float jumpForce = 10f; // Force de saut
-    public float rotationSpeed = 700f; // Vitesse de rotation
-    public Camera playerCamera;
-    private NavMeshAgent navMeshAgent;  // Référence au NavMeshAgent
-    private Rigidbody rb;  // Le Rigidbody 3D du personnage, si nécessaire pour le saut
+    public float jumpForce = 10f; // Jump force
+    public float rotationSpeed = 700f; // Rotation speed
+    public Camera playerCamera; // Reference to the player's camera
+    private NavMeshAgent navMeshAgent; // Reference to the NavMeshAgent
+    private Rigidbody rb; // The 3D Rigidbody of the character, necessary for jumping
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();  // Récupère le Rigidbody 3D attaché à ce GameObject
-        navMeshAgent = GetComponent<NavMeshAgent>();  // Récupère le NavMeshAgent attaché au GameObject
+        rb = GetComponent<Rigidbody>(); // Retrieves the 3D Rigidbody attached to this GameObject
+        navMeshAgent = GetComponent<NavMeshAgent>(); // Retrieves the NavMeshAgent attached to this GameObject
 
         if (playerCamera == null)
         {
-            playerCamera = Camera.main;  // Si la caméra n'est pas assignée, on prend la caméra principale
+            playerCamera = Camera.main; // If no camera is assigned, use the main camera
         }
     }
 
     private void Update()
     {
-        // Récupère les entrées horizontales (A/D ou flèches gauche/droite) pour le mouvement
-        float horizontalInput = Input.GetAxis("Horizontal");  // Axe des X (gauche/droite)
-        float verticalInput = Input.GetAxis("Vertical");      // Axe des Z (avant/arrière)
+        // Retrieve horizontal input (A/D or left/right arrow keys) for movement
+        float horizontalInput = Input.GetAxis("Horizontal"); // X-axis (left/right)
+        float verticalInput = Input.GetAxis("Vertical");     // Z-axis (forward/backward)
 
-        // Crée un vecteur de mouvement basé sur les entrées
+        // Create a movement vector based on input
         Vector3 moveDirection = new Vector3(horizontalInput, 0, verticalInput).normalized;
 
-        // On applique le mouvement en fonction de l'orientation de la caméra
+        // Apply movement based on the camera's orientation
         if (moveDirection.magnitude > 0)
         {
-            // Calculer la direction en fonction du forward de la caméra
+            // Calculate the direction based on the camera's forward vector
             Vector3 cameraForward = playerCamera.transform.forward;
-            cameraForward.y = 0f; // On ignore l'axe Y pour éviter que le personnage se déplace vers le haut/bas
-            cameraForward.Normalize(); // Normalisation pour éviter que la vitesse ne varie
+            cameraForward.y = 0f; // Ignore the Y-axis to prevent the character from moving up/down
+            cameraForward.Normalize(); // Normalize to ensure consistent speed
 
-            // La direction du mouvement est basée sur l'orientation de la caméra
+            // Movement direction is based on the camera's orientation
             Vector3 cameraRight = playerCamera.transform.right;
             cameraRight.y = 0f;
             cameraRight.Normalize();
 
             Vector3 move = cameraForward * verticalInput + cameraRight * horizontalInput;
 
-            // Utilisez la vitesse du NavMeshAgent au lieu de la variable moveSpeed
-            navMeshAgent.Move(move * navMeshAgent.speed * Time.deltaTime); // Utilise la vitesse du NavMeshAgent
+            // Use the NavMeshAgent's speed instead of a custom moveSpeed variable
+            navMeshAgent.Move(move * navMeshAgent.speed * Time.deltaTime); // Use the NavMeshAgent's speed
         }
 
-        // Si la touche de saut (espace) est pressée et que le personnage est au sol
+        // If the jump key (space) is pressed and the character is grounded
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Applique une impulsion pour sauter
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse); // Apply an impulse to jump
         }
     }
 
-    // Vérifie si le personnage est au sol (pour éviter les doubles sauts)
+    // Checks if the character is grounded (to prevent double jumps)
     private bool IsGrounded()
     {
-        return Physics.Raycast(transform.position, Vector3.down, 1.1f); // Un rayon vérifie si le sol est sous le personnage
+        return Physics.Raycast(transform.position, Vector3.down, 1.1f); // A ray checks if the ground is below the character
     }
 }
