@@ -202,6 +202,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 276104665040239820, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3049140386587429588, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
       propertyPath: m_Name
       value: GameMamager
@@ -252,14 +256,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3049140386587429588, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1890843690316575052}
+      addedObject: {fileID: 1890843690316575055}
   m_SourcePrefab: {fileID: 100100000, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
 --- !u!1 &1890843690316575049 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3049140386587429588, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
   m_PrefabInstance: {fileID: 1890843690316575048}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1890843690316575052
+--- !u!114 &1890843690316575055
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

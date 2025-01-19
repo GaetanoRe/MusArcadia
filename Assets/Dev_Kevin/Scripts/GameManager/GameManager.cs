@@ -1,46 +1,21 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public void StartBattleState()
-    {
-        // Change l'état en "Battle"
-        UpdateGameState(GameStateSO.GameState.Battle);
-    }
-
-    private static GameManager instance;
-
     [Header("Game State Settings")]
     [SerializeField] private GameStateSO gameStateSO;  // Référence au ScriptableObject GameStateSO
 
-    private void Awake()
+    private void Start()
     {
-        // Enregistrer l'instance pour l'utiliser dans tout le jeu
-        if (instance == null)
+        if (gameStateSO != null)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);  // Garder l'objet lors des changements de scène
+            // Définit l'état actuel à Exploration au démarrage
+            gameStateSO.currentState = GameStateSO.GameState.Exploration;
+            Debug.Log("Game state initialisé à : " + gameStateSO.currentState);
         }
         else
         {
-            Destroy(gameObject);  // Si une autre instance existe déjà, on détruit cet objet
-        }
-    }
-
-    private void UpdateGameState(GameStateSO.GameState newState)
-    {
-        // Change l'état actuel et charge les scènes associées
-        gameStateSO.currentState = newState;
-        List<string> scenesToLoad = gameStateSO.GetScenesForState(newState);
-
-        // Affiche les scènes à charger pour cet état
-        foreach (var sceneName in scenesToLoad)
-        {
-            Debug.Log("Scene to load: " + sceneName);
-            // Charger la scène en mode Additive
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+            Debug.LogWarning("Le GameStateSO n'est pas assigné dans l'inspecteur !");
         }
     }
 }

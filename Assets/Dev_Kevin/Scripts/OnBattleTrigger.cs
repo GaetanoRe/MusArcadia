@@ -10,6 +10,17 @@ public class OnBattleTrigger : MonoBehaviour
         if (other.CompareTag("Player")) // Assurez-vous que le joueur a le tag "Player"
         {
             Debug.Log("Player entered the trigger. Switching to Battle State.");
+
+            if (gameStateSO != null)
+            {
+                // Change l'état du GameStateSO en Battle
+                gameStateSO.currentState = GameStateSO.GameState.Battle;
+                Debug.Log("Game state updated to: " + gameStateSO.currentState);
+            }
+            else
+            {
+                Debug.LogWarning("GameStateSO is not assigned in the inspector!");
+            }
         }
     }
 }

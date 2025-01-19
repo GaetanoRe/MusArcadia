@@ -4,54 +4,81 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagerDynamic : MonoBehaviour
 {
-    [SerializeField] private GameStateSO gameStateSO; // Référence au ScriptableObject GameStateSO
-    private List<string> loadedScenes = new List<string>(); // Liste des scènes actuellement chargées
+    [SerializeField] private GameStateSO gameStateSO; // Reference to the ScriptableObject holding the game state.
+    private GameStateSO.GameState previousState;      // Tracks the previous game state.
 
     private void Start()
     {
-        // Charge initialement les scènes du GameState actuel
-        LoadScenesForCurrentState();
+        if (gameStateSO != null)
+        {
+            // Initialize the previous state with the current state from the ScriptableObject.
+            previousState = gameStateSO.currentState;
+        }
+        else
+        {
+            // Log an error if the GameStateSO reference is not assigned.
+            Debug.LogError("GameStateSO is not assigned in the inspector!");
+        }
     }
 
     private void Update()
     {
-        // Vérifie régulièrement l'état du jeu et charge les scènes appropriées
-        LoadScenesForCurrentState();
+        // Check if the game state has changed.
+        if (gameStateSO != null && gameStateSO.currentState != previousState)
+        {
+            Debug.Log($"GameState changed from {previousState} to {gameStateSO.currentState}");
+
+            // Unload scenes associated with the previous state (except the first one).
+            UnloadScenesForState(previousState);
+
+            // Load scenes associated with the new state.
+            LoadScenesForState(gameStateSO.currentState);
+
+            // Update the previous state to the current state.
+            previousState = gameStateSO.currentState;
+        }
     }
 
     /// <summary>
-    /// Appelé pour charger dynamiquement les scènes en fonction du GameState actuel.
-    /// Décharge les scènes précédemment chargées avant de charger les nouvelles.
+    /// Loads all scenes associated with the given game state.
+    /// Skips scenes that are already loaded.
     /// </summary>
-    private void LoadScenesForCurrentState()
+    /// <param name="state">The game state for which to load scenes.</param>
+    private void LoadScenesForState(GameStateSO.GameState state)
     {
-        // Récupère les scènes associées à l'état actuel
-        List<string> scenesToLoad = gameStateSO.GetScenesForState(gameStateSO.currentState);
+        List<string> scenesToLoad = gameStateSO.GetScenesForState(state);
 
-        // Décharge les scènes précédemment chargées
-        foreach (string scene in loadedScenes)
+        for (int i = 0; i < scenesToLoad.Count; i++)
         {
-            if (SceneManager.GetSceneByName(scene).isLoaded)
-            {
-                Debug.Log($"Unloading scene: {scene}");
-                SceneManager.UnloadSceneAsync(scene);
-            }
-        }
+            string sceneName = scenesToLoad[i];
 
-        loadedScenes.Clear();
-
-        // Charge les nouvelles scènes
-        foreach (string sceneName in scenesToLoad)
-        {
+            // Load the scene if it is not already loaded.
             if (!string.IsNullOrEmpty(sceneName) && !SceneManager.GetSceneByName(sceneName).isLoaded)
             {
                 Debug.Log($"Loading scene: {sceneName}");
-                SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-                loadedScenes.Add(sceneName); // Ajouter à la liste des scènes chargées
+                SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
             }
-            else
+        }
+    }
+
+    /// <summary>
+    /// Unloads all scenes associated with the given game state, except the first scene (index 0).
+    /// </summary>
+    /// <param name="state">The game state for which to unload scenes.</param>
+    private void UnloadScenesForState(GameStateSO.GameState state)
+    {
+        List<string> scenesToUnload = gameStateSO.GetScenesForState(state);
+
+        // Start from index 1 to ensure the first scene is never unloaded.
+        for (int i = 1; i < scenesToUnload.Count; i++)
+        {
+            string sceneName = scenesToUnload[i];
+
+            // Unload the scene if it is currently loaded.
+            if (SceneManager.GetSceneByName(sceneName).isLoaded)
             {
-                Debug.LogWarning($"Scene name is empty or already loaded: {sceneName}");
+                Debug.Log($"Unloading scene: {sceneName}");
+                SceneManager.UnloadSceneAsync(sceneName);
             }
         }
     }
