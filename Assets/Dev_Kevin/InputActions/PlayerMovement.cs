@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 10f; // Jump force
     public float rotationSpeed = 700f; // Rotation speed
     public Camera playerCamera; // Reference to the player's camera
+    [SerializeField] private GameStateSO gameStateSO;
+    [SerializeField] private PlayerSettingsSO playerSettingsSO;
     private NavMeshAgent navMeshAgent; // Reference to the NavMeshAgent
     private Rigidbody rb; // The 3D Rigidbody of the character, necessary for jumping
 
@@ -30,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 moveDirection = new Vector3(horizontalInput, 0, verticalInput).normalized;
 
         // Apply movement based on the camera's orientation
-        if (moveDirection.magnitude > 0)
+        if (playerSettingsSO.canPlayerMove == true && moveDirection.magnitude > 0)
         {
             // Calculate the direction based on the camera's forward vector
             Vector3 cameraForward = playerCamera.transform.forward;
