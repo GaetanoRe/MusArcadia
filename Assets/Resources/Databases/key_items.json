@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "name": "Ancient Key",
+        "description": "Unlocks a mysterious door.",
+        "itemType": "KeyItem"
+    },
+    {
+        "id": 1,
+        "name": "Royal Seal",
+        "description": "A seal of the royal family.",
+        "itemType": "KeyItem"
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "name": "Health Potion",
+        "description": "Restores 50 HP.",
+        "itemType": "Consumable",
+        "healthHealed": 50,
+        "manaHealed": 0
+    },
+    {
+        "id": 1,
+        "name": "Mana Potion",
+        "description": "Restores 30 MP.",
+        "itemType": "Consumable",
+        "healthHealed": 0,
+        "manaHealed": 30
+    }
+]
