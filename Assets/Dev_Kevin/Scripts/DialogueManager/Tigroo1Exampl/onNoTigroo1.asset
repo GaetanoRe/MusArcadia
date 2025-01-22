@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterNames:
   - Player
-  - Tigroo
+  - onNoTigroo1
   dialogueLines:
   - lineText: good, me too !
     isAQuestion: 0
-    speakerName: 
+    isLastDialogueLine: 1
+    speakerName: Tigroo1

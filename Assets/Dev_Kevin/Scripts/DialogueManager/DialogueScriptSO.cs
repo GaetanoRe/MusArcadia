@@ -20,6 +20,8 @@ public class DialogueScriptSO : ScriptableObject
 
         public bool isAQuestion; // Booléen pour savoir si cette ligne est une question
 
+        public bool isLastDialogueLine; // Booléen pour savoir si cette ligne est la dernière ligne du dialogue
+
         [Tooltip("Select the speaker from the character list.")]
         public string speakerName; // Nom du personnage qui parle
     }
@@ -55,6 +57,9 @@ public class DialogueScriptEditor : Editor
 
             // Checkbox pour savoir si cette ligne est une question
             line.isAQuestion = EditorGUILayout.Toggle("Is a Question?", line.isAQuestion);
+
+            // Ajout du nouveau booléen isLastDialogueLine
+            line.isLastDialogueLine = EditorGUILayout.Toggle("Is Last Dialogue Line?", line.isLastDialogueLine);
 
             // Menu déroulant pour sélectionner le personnage
             int selectedIndex = System.Array.IndexOf(dialogueScript.characterNames, line.speakerName);

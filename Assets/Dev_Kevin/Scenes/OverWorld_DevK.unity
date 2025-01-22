@@ -1016,6 +1016,7 @@ GameObject:
   - component: {fileID: 926671995}
   - component: {fileID: 926671997}
   - component: {fileID: 926671996}
+  - component: {fileID: 926671999}
   m_Layer: 0
   m_Name: PressKeyToInteract
   m_TagString: Untagged
@@ -1023,21 +1024,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &926671995
-Transform:
+--- !u!224 &926671995
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926671994}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.943, y: 0.801, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.015625, y: 0.015625, z: 0.015625}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 953729475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.943, y: 0.801}
+  m_SizeDelta: {x: 27.390001, y: 26.052599}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &926671996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,6 +1111,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!222 &926671999
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926671994}
+  m_CullTransparentMesh: 1
 --- !u!1001 &953729470
 PrefabInstance:
   m_ObjectHideFlags: 0
