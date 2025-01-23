@@ -217,6 +217,8 @@ MonoBehaviour:
   jumpForce: 10
   rotationSpeed: 700
   playerCamera: {fileID: 0}
+  gameStateSO: {fileID: 0}
+  playerSettingsSO: {fileID: 0}
 --- !u!114 &7646984939058111654
 MonoBehaviour:
   m_ObjectHideFlags: 0

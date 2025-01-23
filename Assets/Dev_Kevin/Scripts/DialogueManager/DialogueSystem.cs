@@ -184,6 +184,8 @@ public class DialogueSystem : MonoBehaviour
 
     #endregion Button Handling
 
+    #region Utility Methods
+
     /// <summary>
     /// Clears the Unity console.
     /// </summary>
@@ -195,4 +197,6 @@ public class DialogueSystem : MonoBehaviour
         clearMethod.Invoke(new object(), null); // Clear the log entries in the editor
 #endif
     }
+
+    #endregion Utility Methods
 }
