@@ -9,70 +9,88 @@ public class OnNPCTrigger : MonoBehaviour
 {
     [HideInInspector] public GameObject dialogueSystem;
 
-    // Removed the NpcName enum and just use a string for NPC name
-    public string selectedNpcName;
+    public string selectedNpcName; // The name of the selected NPC
+    [HideInInspector] public GameObject interactKeySprite; // Interaction key indicator
 
-    // Reference to the GameObject for the selected interaction key
-    [HideInInspector] public GameObject interactKeySprite;
+    [SerializeField] private float cooldownTime = 0.5f; // Cooldown time for pressing "E"
+    private float cooldownTimer = 0f;
 
-    // Variable to check if the player can press "E" for interaction
-    private bool canPressE;
+    private bool canPressE = false; // Indicates if the player can press "E"
+    private bool _inputProcessed = false; // Ensures input isn't processed multiple times
 
     private void Start()
     {
-        // Trouve l'enfant nommé "PressKeyToInteract" parmi les enfants de ce GameObject
+        // Finds the child GameObject "PressKeyToInteract" and deactivates it initially
         interactKeySprite = transform.Find("PressKeyToInteract")?.gameObject;
 
-        // Si l'enfant est trouvé, désactive-le initialement
         if (interactKeySprite != null)
         {
-            interactKeySprite.SetActive(false); // Désactive l'objet
+            interactKeySprite.SetActive(false); // Disable interact indicator
         }
         else
         {
             Debug.LogWarning("PressKeyToInteract not found as a child of " + gameObject.name);
         }
-
-        canPressE = false; // Désactive l'interaction jusqu'à ce que le joueur entre dans la zone de déclenchement
     }
 
     private void Update()
     {
+        // Ensure the DialogueSystem reference is set
         if (dialogueSystem == null)
         {
             dialogueSystem = GameObject.Find("DialogueSystem");
         }
-        // Check if the "E" key is pressed and if interaction is allowed (i.e., player is inside the trigger area)
-        if (Input.GetKeyDown(KeyCode.E) && canPressE == true)
+
+        // Cooldown timer logic
+        if (cooldownTimer > 0f)
         {
-            OnTriggerKeyPressed();
+            cooldownTimer -= Time.deltaTime;
+            if (cooldownTimer <= 0f)
+            {
+                _inputProcessed = false; // Resets input processing flag
+            }
+        }
+
+        // Check for the "E" key press and trigger the interaction logic
+        if (Input.GetKeyDown(KeyCode.E) && canPressE && !_inputProcessed)
+        {
+            if (!GameManager.Instance.GetIsEpressed()) // Access singleton directly
+            {
+                GameManager.Instance.SetIsEpressed(true); // Update state in GameManager
+                _inputProcessed = true;                  // Mark input as processed
+                cooldownTimer = cooldownTime;            // Start cooldown timer
+                OnTriggerKeyPressed();                   // Execute interaction logic
+            }
+        }
+
+        // Resets _inputProcessed when the key is released
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            _inputProcessed = false;
         }
     }
 
     private void OnTriggerKeyPressed()
     {
-        // Print a message to the console when "E" is pressed
-        Debug.Log("Key E Pressed !");
-        //test
-        GameObject maincharacterGO = GameObject.Find("MainCharacter");
-        maincharacterGO.GetComponent<PlayerCtrl>().canPlayerMove = false;
+        Debug.Log("Key E Pressed!"); // Debug message
 
-        // Send the name of the selected NPC to the ShowText method
+        // Example: Disable player movement
+        GameObject mainCharacterGO = GameObject.Find("MainCharacter");
+        mainCharacterGO.GetComponent<PlayerCtrl>().canPlayerMove = false;
+
+        // Send NPC name to the dialogue system
         dialogueSystem.GetComponent<DialogueSystem>().ShowText(selectedNpcName);
     }
 
     private void OnTriggerStay(Collider other)
     {
-        // Check if the object entering the trigger has the tag "Player"
         if (other.CompareTag("Player"))
         {
-            // Log the player's entry into the trigger area
             Debug.Log("Player is in the trigger area!");
 
-            // If the interactKey is found and not already active, enable it
-            if (interactKeySprite != null && interactKeySprite.activeInHierarchy == false)
+            // Activate interact indicator and enable "E" interaction
+            if (interactKeySprite != null && !interactKeySprite.activeInHierarchy)
             {
-                // Enable the GameObject (e.g., "PressKeyToInteract") and allow "E" key press
                 interactKeySprite.SetActive(true);
                 canPressE = true;
             }
@@ -81,17 +99,15 @@ public class OnNPCTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        // Check if the object exiting the trigger has the tag "Player"
         if (other.CompareTag("Player"))
         {
-            // Log the player's exit from the trigger area
             Debug.Log("Player left the trigger area!");
 
-            // Disable the GameObject and prevent "E" key interaction
+            // Deactivate interact indicator and disable "E" interaction
             if (interactKeySprite != null)
             {
                 interactKeySprite.SetActive(false);
-                canPressE = false; // Disable "E" interaction once the player leaves the trigger
+                canPressE = false;
             }
         }
     }

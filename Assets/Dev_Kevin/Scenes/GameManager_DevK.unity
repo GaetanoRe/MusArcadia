@@ -374,6 +374,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1890843690316575056}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetIsEpressed
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &91457696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1806,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3049140386587429588, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
       propertyPath: m_Name
-      value: GameMamager
+      value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 4296227572844606461, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1874,6 +1886,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateSO: {fileID: 11400000, guid: 5785bfa1e384399469fa03b6adec2eeb, type: 2}
+--- !u!114 &1890843690316575056 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 276104665040239820, guid: fd152c42dd4210b4ea77b1591d7096f2, type: 3}
+  m_PrefabInstance: {fileID: 1890843690316575048}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890843690316575049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2802c95443f09e7499e867d998b61da8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3867623410060304303
 PrefabInstance:
   m_ObjectHideFlags: 0

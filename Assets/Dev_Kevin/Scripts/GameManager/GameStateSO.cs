@@ -7,6 +7,8 @@ public class GameStateSO : ScriptableObject
     // The current game state (Menu, Battle, or Exploration)
     public GameState currentState;
 
+    public bool isEpressed;
+
     [Header("Battle State Settings")]
     public List<SceneRef> battleScenes; // List of scenes for the Battle state
 
