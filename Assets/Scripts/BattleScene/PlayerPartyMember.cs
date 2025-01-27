@@ -5,18 +5,19 @@ using System.Threading.Tasks;
 using MusArcadia.Assets.Scripts.GeneralUse;
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
-    public class PlayerClass : Entity
+    public class PlayerPartyMember : Entity
     {
 
         private float _exp;
-        public Inventory inventory;
         public float exp{ get{
             return _exp;
         } 
         set{
-            if(value >= expCap){
+            _exp = value;
+            while(_exp >= expCap){
                 _exp = value - expCap;
-                statSheet.level++;
+                LevelUp();
+                
             }
         } }
         public float expCap {
@@ -25,14 +26,10 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             }
         }
 
-        public PlayerClass() : base(){
-            exp = 0;
+        void Start()
+        {
+            
         }
-
-        public PlayerClass(int level, int consti, int dex, int str, int intel, int agil) : base(level, consti, dex, str, intel, agil) {
-            exp = 0;
-        }
-
 
         public override void attack(Entity subject){
             
@@ -40,6 +37,16 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public override void castMagic(Entity subject){
 
+        }
+
+        public override void run()
+        {
+            
+        }
+
+        public virtual void LevelUp(){
+            statSheet.level++;
+            
         }
     }
 }

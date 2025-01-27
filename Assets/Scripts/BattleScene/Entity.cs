@@ -1,7 +1,7 @@
 using UnityEngine;
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
-    public abstract class Entity{
+    public abstract class Entity: MonoBehaviour{
 
         private float _health;
         private float _mana;
@@ -9,12 +9,12 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public float maxHealth{
             get{
-                return statSheet.constitution * 5.5f;
+                return (statSheet.constitution * 5.5f) + (float)(statSheet.level * 2.25);
             }
         }
         public float maxMana{
             get{
-                return statSheet.intelligence * 2.5f;
+                return (statSheet.intelligence * 2.5f) + (float)(statSheet.level * 1.25);
             }
         }
 
@@ -65,16 +65,8 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             }
         }
 
-        public Entity(){
-            statSheet = new Stats();
-            health = maxHealth;
-            mana = maxMana;
-        }
+        public void Start(){
 
-        public Entity(int level, int consti, int dex, int str, int intel, int agil){
-            statSheet = new Stats(level, consti, dex, str, intel, agil);
-            health = maxHealth;
-            mana = maxMana;
         }
 
         public virtual void takeDamage(int amount){
@@ -84,6 +76,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public abstract void attack(Entity subject);
         public abstract void castMagic(Entity subject);
+        public abstract void run();
 
     }
 }

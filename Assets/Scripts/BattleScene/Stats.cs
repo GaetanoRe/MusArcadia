@@ -2,19 +2,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
-    public class Stats
+
+    [CreateAssetMenu(fileName = "Stats", menuName = "Stats")]
+    public class Stats : ScriptableObject 
     {
-        public int constitution {get; private set;}
-        public int dexterity {get; private set;}
-        public int strength {get; private set;}
-        public int intelligence {get; private set;}
-        public int agility {get; private set;}
+        public int level;
+        public int constitution;
+        public int dexterity;
+        public int strength;
+        public int intelligence;
+        public int agility;
 
 
-        public int level {get; set;}
+       
 
 
         /**
@@ -48,7 +52,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             Method Name: ModifyStat Class
             Description: Modifies a stat with a given word representing the stat and a given value
         **/
-         public void ModifyStat(string statName, int value)
+       /*  public void ModifyStat(string statName, int value)
         {
             switch (statName.ToLower())
             {
@@ -70,6 +74,6 @@ namespace MusArcadia.Assets.Scripts.BattleScene
                 default:
                     throw new ArgumentException($"Stat {statName} not found.");
             }
-        }
+        }*/
     }
 }
