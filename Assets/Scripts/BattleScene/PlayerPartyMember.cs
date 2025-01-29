@@ -32,10 +32,12 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
         public override void attack(Entity subject){
-            
+            if(subject is EnemyPartyMember){
+                subject.takeDamage(meleeDamage);
+            }
         }
 
-        public override void castMagic(Entity subject){
+        public override void castMagic(Entity subject, Magic spell){
 
         }
 

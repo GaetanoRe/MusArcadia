@@ -1,4 +1,7 @@
 using UnityEngine;
+using MusArcadia.Assets.Scripts.GeneralUse;
+using System.Collections.Generic;
+using TMPro;
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
     public abstract class Entity: MonoBehaviour{
@@ -6,6 +9,11 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         private float _health;
         private float _mana;
         public Stats statSheet;
+
+        public List<Magic.ElementType> strongAgainst;
+        public List<Magic.ElementType> weakAgainst;
+
+        public List<Magic> spellBook;
 
         public float maxHealth{
             get{
@@ -69,13 +77,13 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         }
 
-        public virtual void takeDamage(int amount){
+        public virtual void takeDamage(float amount){
             health -= amount;
             Debug.Log($"{this} took {amount} damage and now has {health}/{maxHealth} health.");
         }
 
         public abstract void attack(Entity subject);
-        public abstract void castMagic(Entity subject);
+        public abstract void castMagic(Entity subject, Magic spell);
         public abstract void run();
 
     }

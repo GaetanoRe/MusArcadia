@@ -1124,6 +1124,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerParty
       objectReference: {fileID: 0}
+    - target: {fileID: 6966698370667670728, guid: 6c30b8a61e2b5f74eb5f0175a8101a81, type: 3}
+      propertyPath: spellBook.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966698370667670728, guid: 6c30b8a61e2b5f74eb5f0175a8101a81, type: 3}
+      propertyPath: strongAgainst.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966698370667670728, guid: 6c30b8a61e2b5f74eb5f0175a8101a81, type: 3}
+      propertyPath: 'strongAgainst.Array.data[0]'
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966698370667670728, guid: 6c30b8a61e2b5f74eb5f0175a8101a81, type: 3}
+      propertyPath: 'strongAgainst.Array.data[1]'
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966698370667670728, guid: 6c30b8a61e2b5f74eb5f0175a8101a81, type: 3}
+      propertyPath: 'strongAgainst.Array.data[2]'
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8481351355185475677, guid: 6c30b8a61e2b5f74eb5f0175a8101a81, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7583208

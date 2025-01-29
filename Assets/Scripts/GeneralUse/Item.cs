@@ -30,16 +30,32 @@ namespace MusArcadia.Assets.Scripts.GeneralUse
 
     }
 
-    [CreateAssetMenu(fileName = "New Equipment", menuName = "Item/Equipment")]
+    
     public class Equipment : Item{
-        public float attackBonus;
-        public float physicalDefenseBonus;
-        public float magicalDefenseBonus;
+        
     }
 
     [CreateAssetMenu(fileName = "New Key Item", menuName = "Item/Key Item")]
     public class KeyItem : Item
     {
         // Key items might not have additional fields but can be extended if needed
+    }
+
+    [CreateAssetMenu(fileName = "New Armor", menuName = "Item/Equipment/Armor")]
+    public class Armor : Equipment{
+        public List<Magic.ElementType> elementDef;
+        public float minPhysDefenseBonus;
+        public float maxPhysDefenseBonus;
+        public float minElementDefenseBonus;
+        public float maxElementDefenseBonus;
+    }
+
+    [CreateAssetMenu(fileName = "New Weapon", menuName = "Item/Equipment/Weapon")]
+    public class Weapon : Equipment{
+        public List<Magic.ElementType> elementDam;
+        public float minPhysDamageBonus;
+        public float maxPhysDamageBonus;
+        public float maxElementDamage;
+        public float minElementDamage;
     }
 }
