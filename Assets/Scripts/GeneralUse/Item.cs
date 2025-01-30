@@ -20,7 +20,6 @@ namespace MusArcadia.Assets.Scripts.GeneralUse
         public string description; // Description of Item
 
         public Sprite artwork; // Artwork for Item
-        public ItemType itemType; 
     }
 
     [CreateAssetMenu(fileName = "New Consumable", menuName = "Item/Consumable")]
@@ -43,6 +42,13 @@ namespace MusArcadia.Assets.Scripts.GeneralUse
 
     [CreateAssetMenu(fileName = "New Armor", menuName = "Item/Equipment/Armor")]
     public class Armor : Equipment{
+        public enum ArmorType
+        {
+            Helmet,
+            Chestplate,
+            Leggings,
+            Boots
+        }
         public List<Magic.ElementType> elementDef;
         public float minPhysDefenseBonus;
         public float maxPhysDefenseBonus;
@@ -50,12 +56,31 @@ namespace MusArcadia.Assets.Scripts.GeneralUse
         public float maxElementDefenseBonus;
     }
 
-    [CreateAssetMenu(fileName = "New Weapon", menuName = "Item/Equipment/Weapon")]
+   
     public class Weapon : Equipment{
         public List<Magic.ElementType> elementDam;
         public float minPhysDamageBonus;
         public float maxPhysDamageBonus;
         public float maxElementDamage;
         public float minElementDamage;
+    }
+
+    [CreateAssetMenu(fileName = "New Physical Weapon", menuName = "Item/Equipment/Weapon/Physical Weapon")]
+    public class PhysicalWeapon : Weapon
+    {
+        public enum DamageType
+        {
+            Slash,
+            Bash,
+            Peirce
+        }
+        public DamageType damageType;
+    }
+
+    [CreateAssetMenu(fileName = "New Ranged Weapon", menuName = "Item/Equipment/Weapon/Ranged Weapon")]
+    public class RangedWeapon : Weapon
+    {
+        public int maxRange;
+        public int minRange;
     }
 }

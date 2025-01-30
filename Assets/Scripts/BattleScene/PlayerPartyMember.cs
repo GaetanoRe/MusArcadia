@@ -7,7 +7,6 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 {
     public class PlayerPartyMember : Entity
     {
-
         private float _exp;
         public float exp{ get{
             return _exp;

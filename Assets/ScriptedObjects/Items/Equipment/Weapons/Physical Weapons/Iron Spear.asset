@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: IronSword
-  m_EditorClassIdentifier: Assembly-CSharp:MusArcadia.Assets.Scripts.GeneralUse:Weapon
+  m_Name: Iron Spear
+  m_EditorClassIdentifier: Assembly-CSharp:MusArcadia.Assets.Scripts.GeneralUse:PhysicalWeapon
   id: 0
-  name: Iron Sword
-  description: A piece of sharpened Iron used to slash enemies
+  name: 
+  description: 
   artwork: {fileID: 0}
-  itemType: 1
   elementDam: 
   minPhysDamageBonus: 0
   maxPhysDamageBonus: 0
   maxElementDamage: 0
   minElementDamage: 0
+  damageType: 2

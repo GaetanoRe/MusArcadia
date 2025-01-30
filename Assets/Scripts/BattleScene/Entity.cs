@@ -6,12 +6,26 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 {
     public abstract class Entity: MonoBehaviour{
 
+        public enum StatusEffects
+        {
+            None,
+            Burned,
+            Plague,
+            Frozen,
+            Paralysis
+        }
+
+
         private float _health;
         private float _mana;
         public Stats statSheet;
 
         public List<Magic.ElementType> strongAgainst;
         public List<Magic.ElementType> weakAgainst;
+        public List<Magic.ElementType> nullAgainst;
+
+        public StatusEffects status = 0;
+
 
         public List<Magic> spellBook;
 
@@ -74,7 +88,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
         public void Start(){
-
+            status = 0;
         }
 
         public virtual void takeDamage(float amount){

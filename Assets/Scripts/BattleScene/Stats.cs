@@ -16,8 +16,6 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         public int strength;
         public int intelligence;
         public int agility;
-
-
        
 
 
@@ -48,8 +46,10 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             agility = agil;
 
         }
+
+        // Depreciated method vvv
         /**
-            Method Name: ModifyStat Class
+            Method Name: ModifyStat
             Description: Modifies a stat with a given word representing the stat and a given value
         **/
        /*  public void ModifyStat(string statName, int value)
