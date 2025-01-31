@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
-    public abstract class Entity: MonoBehaviour{
+    public abstract class Entity: ScriptableObject{
 
         public enum StatusEffects
         {
@@ -19,12 +19,13 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         private float _health;
         private float _mana;
         public Stats statSheet;
+        public Sprite enitiySprite;
 
         public List<Magic.ElementType> strongAgainst;
         public List<Magic.ElementType> weakAgainst;
         public List<Magic.ElementType> nullAgainst;
 
-        public StatusEffects status = 0;
+        public StatusEffects status;
 
 
         public List<Magic> spellBook;
@@ -59,37 +60,8 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
 
-        public float health {
-            get => _health;
-            set{
-                if(value > maxHealth){
-                    _health = maxHealth;
-                }
-                else if(value < 0){
-                    _health = 0;
-                }
-                else{
-                    _health = value;
-                }
-            }}
-        public float mana{
-            get => _mana;
-            set{
-                if(value > maxMana){
-                    _mana = maxMana;
-                }
-                else if(value < 0){
-                    _mana = 0;
-                }
-                else{
-                    _mana = value;
-                }
-            }
-        }
-
-        public void Start(){
-            status = 0;
-        }
+        public float health;
+        public float mana;
 
         public virtual void takeDamage(float amount){
             health -= amount;

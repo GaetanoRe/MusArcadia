@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MusArcadia.Assets.Scripts.GeneralUse;
+using UnityEngine;
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
-    public class PlayerPartyMember : Entity
+    [CreateAssetMenu(fileName = "New Player Party Member", menuName = "Entity/Player Party Member")]
+    public class PlayerPartyMemberInfo : Entity
     {
         private float _exp;
         public float exp{ get{
@@ -31,9 +33,9 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
         public override void attack(Entity subject){
-            if(subject is EnemyPartyMember){
+            /**if(subject is EnemyPartyMember){
                 subject.takeDamage(meleeDamage);
-            }
+            }**/
         }
 
         public override void castMagic(Entity subject, Magic spell){

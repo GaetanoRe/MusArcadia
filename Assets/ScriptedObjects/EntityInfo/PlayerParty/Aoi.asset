@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66c68b7ae6dc4ce4c891a4d4a4426a3e, type: 3}
-  m_Name: PlayerStats
+  m_Script: {fileID: 11500000, guid: aaa8be43b167cb9428015ac6394127d1, type: 3}
+  m_Name: Aoi
   m_EditorClassIdentifier: 
-  level: 1
-  constitution: 10
-  dexterity: 10
-  strength: 10
-  intelligence: 10
-  agility: 10
+  statSheet: {fileID: 0}
+  enitiySprite: {fileID: 0}
+  strongAgainst: 
+  weakAgainst: 
+  nullAgainst: 
+  status: 0
+  spellBook: []
+  health: 0
+  mana: 0

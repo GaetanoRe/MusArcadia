@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MusArcadia.Assets.Scripts.GeneralUse;
+using UnityEngine;
 
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
-    public class EnemyPartyMember : Entity
+    [CreateAssetMenu(fileName = "New Enemy Party Member", menuName = "Entity/Enemy Party Member")]
+    public class EnemyPartyMemberInfo : Entity
     {
-        void Start(){
-
+        public enum EnemyType
+        {
+            Brawler,
+            Strategist,
+            Healer,
+            Boss
         }
 
         public override void attack(Entity subject){
-            if (subject is PlayerPartyMember){
+            /**if (subject is PlayerPartyMemberInfo){
                 subject.takeDamage(meleeDamage);
-            }
+            }**/
         }
         public override void castMagic(Entity subject, Magic spell){
             
