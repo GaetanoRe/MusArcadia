@@ -6,54 +6,38 @@ using UnityEngine;
 
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
+    public enum BattleState{
+        BattleStart,
+        PlayerTurn,
+        EnemyTurn,
+        Win,
+        Lose
+    }
+
     public class BattleManager : MonoBehaviour
     {
-        public bool PlayerTurn;
-
-        public bool victory;
+        public BattleState state;
         public int fullTurns { get; set; }
         public int halfTurns { get; set; }
 
-        public List<PlayerPartyMember> playerParty{ get; set; }
-        public List<EnemyPartyMember> [] enemyParty{ get; set; }
+        public List<Transform> playerPartyMemberPos;
+        public List<Transform> enemyPartyMemberPos;
+        
+
+        public List<GameObject> playerPartyMembers{ get; set; }
+        public List<GameObject> enemyPartyMembers{ get; set; }
 
         private List<Entity> currentPartyTurn;
 
         private void Start()
         {
-            
+            state = BattleState.BattleStart;
+            SetupBattle();
         }
 
-        private void Update()
-        {
-            
-        }
-
-        private void FixedUpdate()
-        {
-            
-        }
-
-        public void OnBattleStart(bool playerFirst)
-        {
+        void SetupBattle(){
 
         }
-
-        public void OnTurnStart(Entity person)
-        {
-
-        }
-
-        public void OnTurnEnd(Entity person)
-        {
-
-        }
-
-        public void OnBattleEnd(bool battleWon)
-        {
-
-        }
-
 
     }
 
