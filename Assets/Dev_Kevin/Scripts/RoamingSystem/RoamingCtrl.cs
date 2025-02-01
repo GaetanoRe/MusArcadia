@@ -1,67 +1,94 @@
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.SceneManagement; // N'oublie pas d'inclure ce namespace pour travailler avec les scènes
+using UnityEngine.SceneManagement; // For working with scenes
 
 public class RoamingCtrl : MonoBehaviour
 {
-    public GameObject OnBattleSpawnLocationObject;
-    public Vector3 SpawnPosition;
+    #region Serialized Fields
 
-    public bool canSetPositionInExploration;
-
-    // Serialized fields for customizable radius and invoke interval
     [SerializeField] private float m_Radius = 10f; // Radius for selecting a random point around the agent
-
     [SerializeField] private float m_InvokeInterval = 3f; // Time interval between each movement
+    [SerializeField] private GameStateSO m_GameStateSO; // Reference to the ScriptableObject containing the game's state
 
-    [SerializeField] private GameStateSO gameStateSO; // Reference to the ScriptableObject containing the game's state.
+    #endregion Serialized Fields
+
+    #region Private Fields
 
     private NavMeshAgent m_Agent;
+    private Vector3 m_SpawnPosition;
+    private bool m_CanSetPositionInExploration;
+    private GameObject m_OnBattleSpawnLocationObject;
+
+    #endregion Private Fields
+
+    #region Unity Lifecycle Methods
 
     private void Start()
     {
         m_Agent = GetComponent<NavMeshAgent>(); // Get the NavMeshAgent component attached to this GameObject
+        m_SpawnPosition = transform.position; // Save the initial spawn position
 
-        SpawnPosition = GetComponent<Transform>().position;
+        InvokeRepeating(nameof(MoveToRandomPoint), 0f, m_InvokeInterval); // Start moving to random points
 
-        InvokeRepeating(nameof(MoveToRandomPoint), 0f, m_InvokeInterval);
-
-        canSetPositionInExploration = false;
+        m_CanSetPositionInExploration = false; // Initial state where position cannot be set during exploration
     }
 
     private void Update()
     {
-        // Check if the game is in "Battle" state
-        if (gameStateSO.currentState == GameStateSO.GameState.Battle)
+        HandleGameStates(); // Handle state transitions and behaviors during each frame
+    }
+
+    #endregion Unity Lifecycle Methods
+
+    #region Game State Handling
+
+    // Handle the logic based on the current game state
+    private void HandleGameStates()
+    {
+        if (m_GameStateSO.currentState == GameStateSO.GameState.Battle)
         {
-            // Stop the roaming behavior during the Battle state
-            m_Agent.enabled = false;
-
-            canSetPositionInExploration = true;
-
-            try
-            {
-                OnBattleSpawnLocationObject = FindObjectInAllScenes("EnemyBattleSpawnPosition");
-
-                this.transform.position = OnBattleSpawnLocationObject.transform.position;
-            }
-            catch (System.Exception)
-            {
-                Debug.Log("transform not found");
-            }
+            HandleBattleState();
         }
-        if (gameStateSO.currentState == GameStateSO.GameState.Exploration && canSetPositionInExploration == true)
+        else if (m_GameStateSO.currentState == GameStateSO.GameState.Exploration && m_CanSetPositionInExploration)
         {
-            canSetPositionInExploration = false;
-            this.transform.position = SpawnPosition;
-            m_Agent.enabled = true;
+            HandleExplorationState();
         }
     }
+
+    private void HandleBattleState()
+    {
+        m_Agent.enabled = false; // Disable the agent during Battle state
+        m_CanSetPositionInExploration = true; // Allow position change in exploration
+
+        try
+        {
+            m_OnBattleSpawnLocationObject = FindObjectInAllScenes("EnemyBattleSpawnPosition");
+            if (m_OnBattleSpawnLocationObject != null)
+            {
+                transform.position = m_OnBattleSpawnLocationObject.transform.position; // Set position to battle spawn
+            }
+        }
+        catch (System.Exception)
+        {
+            Debug.Log("Transform not found");
+        }
+    }
+
+    private void HandleExplorationState()
+    {
+        m_CanSetPositionInExploration = false;
+        transform.position = m_SpawnPosition; // Reset position to original spawn position
+        m_Agent.enabled = true; // Re-enable the agent for exploration
+    }
+
+    #endregion Game State Handling
+
+    #region Movement Logic
 
     // Method to move the agent to a random point within the defined radius
     private void MoveToRandomPoint()
     {
-        if (m_Agent.enabled == true)
+        if (m_Agent.enabled)
         {
             Vector3 randomPoint = GetRandomNavMeshPoint(transform.position, m_Radius);
             if (randomPoint != Vector3.zero)
@@ -86,6 +113,10 @@ public class RoamingCtrl : MonoBehaviour
         return Vector3.zero; // Return zero if no valid point is found
     }
 
+    #endregion Movement Logic
+
+    #region Scene Handling
+
     // Helper method to search for an object in all loaded scenes
     private GameObject FindObjectInAllScenes(string objectName)
     {
@@ -105,4 +136,6 @@ public class RoamingCtrl : MonoBehaviour
         }
         return null; // Return null if not found in any scene
     }
+
+    #endregion Scene Handling
 }

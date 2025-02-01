@@ -5,27 +5,10 @@ public class EnemyCtrl : MonoBehaviour
     #region Singleton
 
     // Property to access the unique instance of EnemyCtrl
-    public static EnemyCtrl Instance
-    {
-        get
-        {
-            // Check if the instance already exists
-            if (_instance == null)
-            {
-                _instance = FindObjectOfType<EnemyCtrl>(); // Try to find an existing instance
-                if (_instance == null)
-                {
-                    // If no instance is found, create a new GameObject with this script
-                    GameObject singleton = new GameObject("EnemyCtrl");
-                    _instance = singleton.AddComponent<EnemyCtrl>();
-                }
-            }
-            return _instance;
-        }
-    }
+    public static EnemyCtrl Instance { get; private set; }
 
     // Static instance for the Singleton pattern
-    private static EnemyCtrl _instance;
+    private static bool _isInstanceCreated = false;
 
     #endregion Singleton
 
@@ -33,30 +16,32 @@ public class EnemyCtrl : MonoBehaviour
 
     private SpriteBillboard m_SpriteBillboard; // Variable to hold the SpriteBillboard component
 
-    [SerializeField] private bool lookAtPlayer = false; // Boolean to control if the enemy should look at the player
-    private Transform playerTransform; // Variable to hold the player's transform
-    private bool playerInitialized = false; // Flag to check if playerTransform is initialized
+    [SerializeField] private bool m_LookAtPlayer = false; // Boolean to control if the enemy should look at the player
+    private Transform m_PlayerTransform; // Variable to hold the player's transform
+    private bool m_PlayerInitialized = false; // Flag to check if playerTransform is initialized
 
+    // Ensure the object is initialized properly and prevents duplication
     private void Awake()
     {
-        // Check if there's already an instance of this script
-        if (_instance != null && _instance != this)
+        // If an instance already exists, destroy this object
+        if (_isInstanceCreated && Instance != this)
         {
-            // If an instance exists and it's not this one, destroy this object
             Destroy(gameObject);
+            return;
         }
-        else
+
+        // Set the instance if it's not already set
+        if (!Instance)
         {
-            // Otherwise, set this instance as the unique instance
-            _instance = this;
-            // Prevent the object from being destroyed when changing scenes
-            DontDestroyOnLoad(gameObject);
+            Instance = this;
+            _isInstanceCreated = true;
+            DontDestroyOnLoad(gameObject); // Prevent destruction on scene load
         }
     }
 
+    // Try to get the SpriteBillboard component during the start phase
     private void Start()
     {
-        // Try to find the "GFX" child GameObject and get its SpriteBillboard component
         GameObject gfx = transform.Find("GFX")?.gameObject; // Find the GFX child
         if (gfx != null)
         {
@@ -74,26 +59,35 @@ public class EnemyCtrl : MonoBehaviour
 
     private void Update()
     {
-        // Check if playerTransform is not initialized yet
-        if (!playerInitialized)
+        InitializePlayer(); // Initialize player transform if not already done
+        HandleLookAtPlayer(); // Handle the enemy's rotation towards the player
+    }
+
+    // Method to initialize the player transform
+    private void InitializePlayer()
+    {
+        // If playerTransform is not initialized yet, find the "MainCharacter" GameObject
+        if (!m_PlayerInitialized)
         {
-            // Try to find the "MainCharacter" GameObject and get its transform
             GameObject mainCharacter = GameObject.Find("MainCharacter");
             if (mainCharacter != null)
             {
-                playerTransform = mainCharacter.transform; // Get the player's transform
-                playerInitialized = true; // Mark as initialized
+                m_PlayerTransform = mainCharacter.transform; // Get the player's transform
+                m_PlayerInitialized = true; // Mark as initialized
             }
             else
             {
                 Debug.LogWarning("MainCharacter not found in the scene.");
             }
         }
+    }
 
-        // If lookAtPlayer is true and we have a valid playerTransform, rotate towards the player
-        if (lookAtPlayer && playerTransform != null)
+    // Method to handle the enemy's rotation towards the player
+    private void HandleLookAtPlayer()
+    {
+        if (m_LookAtPlayer && m_PlayerTransform != null)
         {
-            Vector3 direction = playerTransform.position - transform.position;
+            Vector3 direction = m_PlayerTransform.position - transform.position;
             direction.y = 0; // Keep the rotation on the horizontal plane
             Quaternion rotation = Quaternion.LookRotation(direction);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 5f); // Smooth rotation

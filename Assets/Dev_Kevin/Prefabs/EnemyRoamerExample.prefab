@@ -274,6 +274,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21640f4745e3b0441b594f77f8037354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnBattleSpawnLocationObject: {fileID: 0}
+  SpawnPosition: {x: 0, y: 0, z: 0}
+  canSetPositionInExploration: 0
   m_Radius: 10
   m_InvokeInterval: 3
   gameStateSO: {fileID: 11400000, guid: 5785bfa1e384399469fa03b6adec2eeb, type: 2}
