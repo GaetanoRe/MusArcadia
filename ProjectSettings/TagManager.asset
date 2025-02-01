@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - PressKeyToInteract
+  - FollowerAI
   layers:
   - Default
   - TransparentFX
