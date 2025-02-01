@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: ebfdf66b3adc2734680c336e3ff06c72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: -356300550705770973
+    second: Hina-Chibi-Walk-Down-Sheet_0
+  - first:
+      213: 484065153454416922
+    second: Hina-Chibi-Walk-Down-Sheet_1
+  - first:
+      213: -8094981426446879956
+    second: Hina-Chibi-Walk-Down-Sheet_2
+  - first:
+      213: -5019290394097251961
+    second: Hina-Chibi-Walk-Down-Sheet_3
+  - first:
+      213: 2580156700509206202
+    second: Hina-Chibi-Walk-Down-Sheet_4
+  - first:
+      213: 2958217859098619770
+    second: Hina-Chibi-Walk-Down-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +180,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Hina-Chibi-Walk-Down-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 437
-        height: 502
+        x: 8
+        y: 1
+        width: 16
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +195,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: 32e08e1798a2e0bf0800000000000000
+      internalID: -356300550705770973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Chibi-Walk-Down-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14abcf31beb7b600800000000000000
+      internalID: 484065153454416922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Chibi-Walk-Down-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23bf3d1849d8af80800000000000000
+      internalID: -8094981426446879956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Chibi-Walk-Down-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7898d4bdaf5e75ab0800000000000000
+      internalID: -5019290394097251961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Chibi-Walk-Down-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab6f1be49de8ec320800000000000000
+      internalID: 2580156700509206202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Chibi-Walk-Down-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f2ac33873bd0920800000000000000
+      internalID: 2958217859098619770
       vertices: []
       indices: 
       edges: []
@@ -200,7 +325,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Hina-Chibi-Walk-Down-Sheet_0: -356300550705770973
+      Hina-Chibi-Walk-Down-Sheet_1: 484065153454416922
+      Hina-Chibi-Walk-Down-Sheet_2: -8094981426446879956
+      Hina-Chibi-Walk-Down-Sheet_3: -5019290394097251961
+      Hina-Chibi-Walk-Down-Sheet_4: 2580156700509206202
+      Hina-Chibi-Walk-Down-Sheet_5: 2958217859098619770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

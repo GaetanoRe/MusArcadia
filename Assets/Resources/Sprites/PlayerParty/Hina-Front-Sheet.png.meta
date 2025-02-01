@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 1c9f2ea95dc84e54d96eae348cb725ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 795083794863903407
+    second: Hina-Front-Sheet_0
+  - first:
+      213: -4346624631245796463
+    second: Hina-Front-Sheet_1
+  - first:
+      213: -3097168629715818895
+    second: Hina-Front-Sheet_2
+  - first:
+      213: 1154653286066861325
+    second: Hina-Front-Sheet_3
+  - first:
+      213: -5500553800425551705
+    second: Hina-Front-Sheet_4
+  - first:
+      213: 2199917734974210661
+    second: Hina-Front-Sheet_5
+  - first:
+      213: 334308407501447859
+    second: Hina-Front-Sheet_6
+  - first:
+      213: -299949251996286955
+    second: Hina-Front-Sheet_7
+  - first:
+      213: 2303227627338877897
+    second: Hina-Front-Sheet_8
+  - first:
+      213: -157027153246529417
+    second: Hina-Front-Sheet_9
+  - first:
+      213: 8873498533113855772
+    second: Hina-Front-Sheet_10
+  - first:
+      213: 4095769322878338130
+    second: Hina-Front-Sheet_11
+  - first:
+      213: 7773634128952167558
+    second: Hina-Front-Sheet_12
+  - first:
+      213: 4875129760429602849
+    second: Hina-Front-Sheet_13
+  - first:
+      213: 1287773302542458675
+    second: Hina-Front-Sheet_14
+  - first:
+      213: 8988620095701123331
+    second: Hina-Front-Sheet_15
+  - first:
+      213: 84198656333357167
+    second: Hina-Front-Sheet_16
+  - first:
+      213: -4493872434181210828
+    second: Hina-Front-Sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 20
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa25887bf74b80b00800000000000000
+      internalID: 795083794863903407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 20
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b81a26defada3c0800000000000000
+      internalID: -4346624631245796463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 20
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1762e407a85a405d0800000000000000
+      internalID: -3097168629715818895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 20
+        width: 55
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05b0cacb07260010800000000000000
+      internalID: 1154653286066861325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 20
+        width: 55
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8c5b1367b1aa3b0800000000000000
+      internalID: -5500553800425551705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 20
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5624838368da78e10800000000000000
+      internalID: 2199917734974210661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 20
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2ec82b9b3b3a400800000000000000
+      internalID: 334308407501447859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 20
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5100e189ebd56dbf0800000000000000
+      internalID: -299949251996286955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 20
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb4664f255b6ff10800000000000000
+      internalID: 2303227627338877897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 20
+        width: 55
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77856a6d2a022ddf0800000000000000
+      internalID: -157027153246529417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 20
+        width: 55
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f733de6eff42b70800000000000000
+      internalID: 8873498533113855772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 20
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2540b14bf7817d830800000000000000
+      internalID: 4095769322878338130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 20
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c0c06cd0f71eb60800000000000000
+      internalID: 7773634128952167558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1697
+        y: 20
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128775400b0f7a340800000000000000
+      internalID: 4875129760429602849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 20
+        width: 51
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f5649eef61fd110800000000000000
+      internalID: 1287773302542458675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 20
+        width: 55
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30104317a5efdbc70800000000000000
+      internalID: 8988620095701123331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 20
+        width: 55
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60a0595b322b2100800000000000000
+      internalID: 84198656333357167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hina-Front-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 20
+        width: 61
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d75b6a4de82a1c0800000000000000
+      internalID: -4493872434181210828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hina-Front-Sheet_0: 795083794863903407
+      Hina-Front-Sheet_1: -4346624631245796463
+      Hina-Front-Sheet_10: 8873498533113855772
+      Hina-Front-Sheet_11: 4095769322878338130
+      Hina-Front-Sheet_12: 7773634128952167558
+      Hina-Front-Sheet_13: 4875129760429602849
+      Hina-Front-Sheet_14: 1287773302542458675
+      Hina-Front-Sheet_15: 8988620095701123331
+      Hina-Front-Sheet_16: 84198656333357167
+      Hina-Front-Sheet_17: -4493872434181210828
+      Hina-Front-Sheet_2: -3097168629715818895
+      Hina-Front-Sheet_3: 1154653286066861325
+      Hina-Front-Sheet_4: -5500553800425551705
+      Hina-Front-Sheet_5: 2199917734974210661
+      Hina-Front-Sheet_6: 334308407501447859
+      Hina-Front-Sheet_7: -299949251996286955
+      Hina-Front-Sheet_8: 2303227627338877897
+      Hina-Front-Sheet_9: -157027153246529417
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

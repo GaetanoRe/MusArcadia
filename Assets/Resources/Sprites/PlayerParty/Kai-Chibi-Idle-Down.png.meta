@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: f8b9d723953188b409adcdd0264a26bd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: 2781089112291553643
+    second: Kai-Chibi-Idle-Down_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +165,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Kai-Chibi-Idle-Down_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 437
-        height: 502
+        width: 16
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: b6138d210d9689620800000000000000
+      internalID: 2781089112291553643
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Kai-Chibi-Idle-Down_0: 2781089112291553643
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

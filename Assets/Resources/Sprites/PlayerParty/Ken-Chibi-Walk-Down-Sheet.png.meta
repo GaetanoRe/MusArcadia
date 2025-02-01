@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: 16f69218850e07143ae388abc4171a48
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: 4736622231526566921
+    second: Ken-Chibi-Walk-Down-Sheet_0
+  - first:
+      213: 4819416831685420170
+    second: Ken-Chibi-Walk-Down-Sheet_1
+  - first:
+      213: -3573243198107894355
+    second: Ken-Chibi-Walk-Down-Sheet_2
+  - first:
+      213: 1607610512288521194
+    second: Ken-Chibi-Walk-Down-Sheet_3
+  - first:
+      213: -9146056984093584855
+    second: Ken-Chibi-Walk-Down-Sheet_4
+  - first:
+      213: -1688537119464255324
+    second: Ken-Chibi-Walk-Down-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +180,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Ken-Chibi-Walk-Down-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 437
-        height: 502
+        x: 9
+        y: 1
+        width: 15
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +195,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: 90ceb59e2dcdbb140800000000000000
+      internalID: 4736622231526566921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ken-Chibi-Walk-Down-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84e525f21202e240800000000000000
+      internalID: 4819416831685420170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ken-Chibi-Walk-Down-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dadb2b04e3a496ec0800000000000000
+      internalID: -3573243198107894355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ken-Chibi-Walk-Down-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb14225e316f4610800000000000000
+      internalID: 1607610512288521194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ken-Chibi-Walk-Down-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9221f9f71ada21180800000000000000
+      internalID: -9146056984093584855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ken-Chibi-Walk-Down-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a09544af6c1198e0800000000000000
+      internalID: -1688537119464255324
       vertices: []
       indices: 
       edges: []
@@ -200,7 +325,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Ken-Chibi-Walk-Down-Sheet_0: 4736622231526566921
+      Ken-Chibi-Walk-Down-Sheet_1: 4819416831685420170
+      Ken-Chibi-Walk-Down-Sheet_2: -3573243198107894355
+      Ken-Chibi-Walk-Down-Sheet_3: 1607610512288521194
+      Ken-Chibi-Walk-Down-Sheet_4: -9146056984093584855
+      Ken-Chibi-Walk-Down-Sheet_5: -1688537119464255324
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: 85ac1420b05095841ae5e2b209675343
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: 8026199600385074646
+    second: Ken-Chibi-Idle-Side_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +165,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Ken-Chibi-Idle-Side_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 437
-        height: 502
+        width: 15
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +180,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: 6d5a55d030ac26f60800000000000000
+      internalID: 8026199600385074646
       vertices: []
       indices: 
       edges: []
@@ -200,7 +200,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Ken-Chibi-Idle-Side_0: 8026199600385074646
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

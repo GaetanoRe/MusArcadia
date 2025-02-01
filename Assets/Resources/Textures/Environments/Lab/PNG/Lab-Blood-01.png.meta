@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: c287cbadd0d629a4989a2a19716bb956
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: -2089250571397117335
+    second: Lab-Blood-01_0
+  - first:
+      213: 397844164775529461
+    second: Lab-Blood-01_1
+  - first:
+      213: -8385151587700657377
+    second: Lab-Blood-01_2
+  - first:
+      213: 54412660771746622
+    second: Lab-Blood-01_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,23 +174,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Lab-Blood-01_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 437
-        height: 502
+        x: 8
+        y: 43
+        width: 50
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: 96ac715bcad7103e0800000000000000
+      internalID: -2089250571397117335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Blood-01_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 7
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb4865f82d658500800000000000000
+      internalID: 397844164775529461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Blood-01_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f13bc43be05f1ab80800000000000000
+      internalID: -8385151587700657377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Blood-01_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 6
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e337594d60051c000800000000000000
+      internalID: 54412660771746622
       vertices: []
       indices: 
       edges: []
@@ -190,7 +265,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 13137db70319da4419fb778d416f7ec9
     internalID: 0
     vertices: []
     indices: 
@@ -200,7 +275,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Lab-Blood-01_0: -2089250571397117335
+      Lab-Blood-01_1: 397844164775529461
+      Lab-Blood-01_2: -8385151587700657377
+      Lab-Blood-01_3: 54412660771746622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
