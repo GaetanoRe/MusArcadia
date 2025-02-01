@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01e2c4e0874007d479c56c44f777a477, type: 3}
   m_Name: GameState
   m_EditorClassIdentifier: 
-  currentState: 1
+  currentState: 2
+  isEpressed: 0
   battleScenes:
   - sceneAsset: {fileID: 102900000, guid: 0091b87c328d1dd4186cb3903cda5c1d, type: 3}
     sceneName: GameManager_DevK
