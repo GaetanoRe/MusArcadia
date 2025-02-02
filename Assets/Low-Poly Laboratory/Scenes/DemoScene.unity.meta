@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f1e77ec7ff2c8fe458b784741bfce9b6
+timeCreated: 1487241602
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Scenes/DemoScene.unity
+  uploadId: 162523

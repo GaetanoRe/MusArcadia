@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 85fe4c2ac2b625b4eadc2303a58a2d71
+timeCreated: 1487238975
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Isometric/Corridor_Iso.prefab
+  uploadId: 162523

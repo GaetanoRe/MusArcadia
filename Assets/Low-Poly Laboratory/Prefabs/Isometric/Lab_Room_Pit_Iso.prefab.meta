@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13c93417713d86b4f95f0db94b563c9c
+timeCreated: 1487238731
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Isometric/Lab_Room_Pit_Iso.prefab
+  uploadId: 162523

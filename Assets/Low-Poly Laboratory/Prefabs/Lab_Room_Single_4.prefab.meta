@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d04ffe5e07d35394cadd428ffd87b584
+timeCreated: 1487157498
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Lab_Room_Single_4.prefab
+  uploadId: 162523

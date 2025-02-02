@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 99bfec0a542b4d34e85612fa215c00cb
+timeCreated: 1487157527
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Pot_Empty.prefab
+  uploadId: 162523

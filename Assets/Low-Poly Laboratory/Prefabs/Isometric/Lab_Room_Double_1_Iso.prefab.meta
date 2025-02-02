@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cf2bcd20bc5c29f4e8fda8bf54ff49ee
+timeCreated: 1487238725
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Isometric/Lab_Room_Double_1_Iso.prefab
+  uploadId: 162523

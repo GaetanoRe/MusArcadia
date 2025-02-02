@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a346334f35392a643b8a0a7f105d94c2
+timeCreated: 1487157481
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Growing_Bed_Small.prefab
+  uploadId: 162523

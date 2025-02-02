@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: deabc7d91c4111a4abe8780479c32a53
+timeCreated: 1487155841
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Materials/Tinted_White.mat
+  uploadId: 162523

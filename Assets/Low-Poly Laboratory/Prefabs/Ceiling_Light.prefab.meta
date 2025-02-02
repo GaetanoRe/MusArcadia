@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f836d19ba493dc948afee4b84c6b859c
+timeCreated: 1487157465
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Ceiling_Light.prefab
+  uploadId: 162523

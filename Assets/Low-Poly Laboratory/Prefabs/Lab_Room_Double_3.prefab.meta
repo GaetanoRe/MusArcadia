@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 91e911cdf3d523d43aba334ce1612a45
+timeCreated: 1487157491
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Lab_Room_Double_3.prefab
+  uploadId: 162523

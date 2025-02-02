@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 18f72478f61af3d4ebcfa1ed4f21eda7
+timeCreated: 1487157499
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Lab_Table.prefab
+  uploadId: 162523

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e61c8f17a845270469a08e15413e90d9
+timeCreated: 1487157472
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Glass_Box.prefab
+  uploadId: 162523

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f8b661fbbbe8df4289914a6b64bfad1
+timeCreated: 1487154540
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Animations/HologramRotate.anim
+  uploadId: 162523

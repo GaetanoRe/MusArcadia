@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 44888db8a5dfa2a4c9459c85fcc5e205
+timeCreated: 1487157541
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Tablet.prefab
+  uploadId: 162523

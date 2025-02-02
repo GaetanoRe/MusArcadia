@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 22203722bd54f3246b42a84e138ab120
+timeCreated: 1487157484
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Lab_Chair.prefab
+  uploadId: 162523

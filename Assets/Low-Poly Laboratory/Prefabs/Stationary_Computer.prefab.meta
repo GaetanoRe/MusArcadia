@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4c21ca25c584df34cb78016595543636
+timeCreated: 1487157537
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Stationary_Computer.prefab
+  uploadId: 162523

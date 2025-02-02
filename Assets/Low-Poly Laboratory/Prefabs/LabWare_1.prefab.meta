@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d173fd7dfc6c50e4b9da49a6e524a60f
+timeCreated: 1487157500
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/LabWare_1.prefab
+  uploadId: 162523

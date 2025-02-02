@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ab916917dbaec834397fb20aae1d1764
+timeCreated: 1487154540
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Animations/Hologram.controller
+  uploadId: 162523

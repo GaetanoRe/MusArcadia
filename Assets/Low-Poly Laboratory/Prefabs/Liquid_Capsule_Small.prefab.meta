@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ecb0c8f70da388442bfb57adcfc962f8
+timeCreated: 1487157517
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 83216
+  packageName: Low-Poly Laboratory
+  packageVersion: 1.0
+  assetPath: Assets/Low-Poly Laboratory/Prefabs/Liquid_Capsule_Small.prefab
+  uploadId: 162523
