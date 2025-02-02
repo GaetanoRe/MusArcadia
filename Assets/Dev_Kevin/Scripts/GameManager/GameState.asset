@@ -17,7 +17,7 @@ MonoBehaviour:
   battleScenes:
   - sceneAsset: {fileID: 102900000, guid: 0091b87c328d1dd4186cb3903cda5c1d, type: 3}
     sceneName: GameManager_DevK
-  - sceneAsset: {fileID: 102900000, guid: 0e59f5f0100cedc41add00e38a502932, type: 3}
+  - sceneAsset: {fileID: 102900000, guid: 064e848ac94f4994080f6ffbe2a463e1, type: 3}
     sceneName: BattleScene_DevK
   menuScenes:
   - sceneAsset: {fileID: 102900000, guid: 0091b87c328d1dd4186cb3903cda5c1d, type: 3}
