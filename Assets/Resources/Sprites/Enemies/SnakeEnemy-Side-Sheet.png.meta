@@ -274,7 +274,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SnakeEnemy-Side-Sheet_0: -7473968439066824061
+      SnakeEnemy-Side-Sheet_1: 769550070614850355
+      SnakeEnemy-Side-Sheet_2: 4582039271920312547
+      SnakeEnemy-Side-Sheet_3: 2590933996508209115
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
