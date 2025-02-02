@@ -274,7 +274,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TigerEnemy-Side-Sheet_0: 4628241233589012326
+      TigerEnemy-Side-Sheet_1: 6956108002240846914
+      TigerEnemy-Side-Sheet_2: 4029266564977767415
+      TigerEnemy-Side-Sheet_3: -4090840824895255119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
