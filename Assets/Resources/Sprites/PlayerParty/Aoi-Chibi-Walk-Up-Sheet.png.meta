@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: c359591263847454abb20049e1754a27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: -4535572599467453117
+    second: Aoi-Chibi-Walk-Up-Sheet_0
+  - first:
+      213: -8272118755907793300
+    second: Aoi-Chibi-Walk-Up-Sheet_1
+  - first:
+      213: -987870384027271656
+    second: Aoi-Chibi-Walk-Up-Sheet_2
+  - first:
+      213: 8553699456843904164
+    second: Aoi-Chibi-Walk-Up-Sheet_3
+  - first:
+      213: 8644293689968329613
+    second: Aoi-Chibi-Walk-Up-Sheet_4
+  - first:
+      213: -9193863245003093638
+    second: Aoi-Chibi-Walk-Up-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +180,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Aoi-Chibi-Walk-Up-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 437
-        height: 502
+        x: 9
+        y: 2
+        width: 14
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +195,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: 3455fb350c86e01c0800000000000000
+      internalID: -4535572599467453117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aoi-Chibi-Walk-Up-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e054ea1d7833d80800000000000000
+      internalID: -8272118755907793300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aoi-Chibi-Walk-Up-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81efce3ae116a42f0800000000000000
+      internalID: -987870384027271656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aoi-Chibi-Walk-Up-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 2
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4f1a82658d4b670800000000000000
+      internalID: 8553699456843904164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aoi-Chibi-Walk-Up-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8386b4cf43b6f770800000000000000
+      internalID: 8644293689968329613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aoi-Chibi-Walk-Up-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7902100716d86080800000000000000
+      internalID: -9193863245003093638
       vertices: []
       indices: 
       edges: []
@@ -200,7 +325,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Aoi-Chibi-Walk-Up-Sheet_0: -4535572599467453117
+      Aoi-Chibi-Walk-Up-Sheet_1: -8272118755907793300
+      Aoi-Chibi-Walk-Up-Sheet_2: -987870384027271656
+      Aoi-Chibi-Walk-Up-Sheet_3: 8553699456843904164
+      Aoi-Chibi-Walk-Up-Sheet_4: 8644293689968329613
+      Aoi-Chibi-Walk-Up-Sheet_5: -9193863245003093638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

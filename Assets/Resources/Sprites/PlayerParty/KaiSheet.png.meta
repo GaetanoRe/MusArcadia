@@ -1,10 +1,55 @@
 fileFormatVersion: 2
-guid: c69940ba4e5a0f54c854f0d5d51ccb42
+guid: 279e5fc87ea746044939a376f67a47a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4502794414300249250
-    second: UITextureUnfilled2_0
+      213: 8441634532935560
+    second: KaiSheet_0
+  - first:
+      213: 8648235559568935598
+    second: KaiSheet_1
+  - first:
+      213: 3505177974600023567
+    second: KaiSheet_2
+  - first:
+      213: 7695057416484194242
+    second: KaiSheet_3
+  - first:
+      213: -4732493926186882371
+    second: KaiSheet_4
+  - first:
+      213: 1188773696456700939
+    second: KaiSheet_5
+  - first:
+      213: -7760030196792911223
+    second: KaiSheet_6
+  - first:
+      213: 7609303805334137554
+    second: KaiSheet_7
+  - first:
+      213: -432428350135951972
+    second: KaiSheet_8
+  - first:
+      213: -1415257523161130726
+    second: KaiSheet_9
+  - first:
+      213: 3658916481125711447
+    second: KaiSheet_10
+  - first:
+      213: -6547842609240573978
+    second: KaiSheet_11
+  - first:
+      213: -8699963377197757600
+    second: KaiSheet_12
+  - first:
+      213: -3804059609052213728
+    second: KaiSheet_13
+  - first:
+      213: 3623351319809341860
+    second: KaiSheet_14
+  - first:
+      213: -3989407387246952397
+    second: KaiSheet_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,419 +210,353 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureUnfilled2_0
+      name: KaiSheet_0
       rect:
         serializedVersion: 2
-        x: 149
-        y: 8
-        width: 220
-        height: 215
+        x: 50
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2acbaf8b9a32d7e30800000000000000
-      internalID: 4502794414300249250
+      spriteID: 887c8a33f9dfd1000800000000000000
+      internalID: 8441634532935560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_1
+      name: KaiSheet_1
       rect:
         serializedVersion: 2
-        x: 231
-        y: 230
-        width: 194
-        height: 88
+        x: 178
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f2f8fc53cfd84714cafc80c00f571a00
-      internalID: -1296805693
+      spriteID: eaa020ecb64b40870800000000000000
+      internalID: 8648235559568935598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_2
+      name: KaiSheet_2
       rect:
         serializedVersion: 2
-        x: 197
-        y: 272
-        width: 29
-        height: 29
+        x: 306
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d40f454e37d58f54a9cbb55a0f06d28b
-      internalID: 595199192
+      spriteID: f0ebe82fbc4e4a030800000000000000
+      internalID: 3505177974600023567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_3
+      name: KaiSheet_3
       rect:
         serializedVersion: 2
-        x: 138
-        y: 271
-        width: 32
-        height: 27
+        x: 434
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c9e28138b4366cf488387473553e2cee
-      internalID: 1918066690
+      spriteID: 2c786cb33f55aca60800000000000000
+      internalID: 7695057416484194242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_4
+      name: KaiSheet_4
       rect:
         serializedVersion: 2
-        x: 142
-        y: 304
-        width: 24
-        height: 35
+        x: 562
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 348747604d8a11846ba767fd118912f3
-      internalID: 981017020
+      spriteID: dbaefe319ddc25eb0800000000000000
+      internalID: -4732493926186882371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_5
+      name: KaiSheet_5
       rect:
         serializedVersion: 2
-        x: 198
-        y: 309
-        width: 28
-        height: 29
+        x: 690
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 58f392ba078fc4a448b37044f1bf9622
-      internalID: 306016698
+      spriteID: b0431a7e06f5f7010800000000000000
+      internalID: 1188773696456700939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_6
+      name: KaiSheet_6
       rect:
         serializedVersion: 2
-        x: 195
-        y: 351
-        width: 30
-        height: 27
+        x: 818
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7ef7b0d62c8d3204fbea62d5d8add46a
-      internalID: 1508688223
+      spriteID: 98a9ad186a5de4490800000000000000
+      internalID: -7760030196792911223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_7
+      name: KaiSheet_7
       rect:
         serializedVersion: 2
-        x: 239
-        y: 321
-        width: 185
-        height: 74
+        x: 946
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b57f47298ea55db42a4004407836aa44
-      internalID: 661085330
+      spriteID: 2da28f0ce7da99960800000000000000
+      internalID: 7609303805334137554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_8
+      name: KaiSheet_8
       rect:
         serializedVersion: 2
-        x: 58
-        y: 346
-        width: 122
-        height: 49
+        x: 1074
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0b47263d194887344ade8b9fdcb436a6
-      internalID: 1154297208
+      spriteID: c9d9657e4b4bff9f0800000000000000
+      internalID: -432428350135951972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_9
+      name: KaiSheet_9
       rect:
         serializedVersion: 2
-        x: 25
-        y: 359
-        width: 21
-        height: 20
+        x: 1202
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a053673c8ff24d749875d4d2ad8dddaf
-      internalID: 1127756837
+      spriteID: a191842f7cefb5ce0800000000000000
+      internalID: -1415257523161130726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_10
+      name: KaiSheet_10
       rect:
         serializedVersion: 2
-        x: 11
-        y: 402
-        width: 280
-        height: 93
+        x: 1330
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3a4b11de936692f469926ab0929b40a4
-      internalID: 1592289945
+      spriteID: 75ef150672517c230800000000000000
+      internalID: 3658916481125711447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_11
+      name: KaiSheet_11
       rect:
         serializedVersion: 2
-        x: 13
-        y: 269
-        width: 108
-        height: 21
+        x: 1458
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6eeeb4a5be8d47b4db5e2407c2c48a9d
-      internalID: 1808936864
+      spriteID: 6e77c0fb6d36125a0800000000000000
+      internalID: -6547842609240573978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_12
+      name: KaiSheet_12
       rect:
         serializedVersion: 2
-        x: 35
-        y: 323
-        width: 82
-        height: 12
+        x: 1586
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 37b4b9a228c11c3418e24df089275bfb
-      internalID: 254556424
+      spriteID: 06b483f1765834780800000000000000
+      internalID: -8699963377197757600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_13
+      name: KaiSheet_13
       rect:
         serializedVersion: 2
-        x: 35
-        y: 307
-        width: 81
-        height: 12
+        x: 1714
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d702a5c189ae1ac49a7bd77b40cebee7
-      internalID: -910105840
+      spriteID: 02e080ab0f3453bc0800000000000000
+      internalID: -3804059609052213728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_14
+      name: KaiSheet_14
       rect:
         serializedVersion: 2
-        x: 35
-        y: 291
-        width: 82
-        height: 12
+        x: 1842
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 26434bf0f75525d4887b1ed7647cd742
-      internalID: 1654565363
+      spriteID: 4a9bda9f3dab84230800000000000000
+      internalID: 3623351319809341860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_15
+      name: KaiSheet_15
       rect:
         serializedVersion: 2
-        x: 36
-        y: 221
-        width: 100
-        height: 27
+        x: 1970
+        y: 13
+        width: 33
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b1ea442538579fb4f9deaea9c470f5eb
-      internalID: 262745947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UITextureUnfilled2_16
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 189
-        width: 101
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ca3e34e1bdc0f849876d0a0936277fa
-      internalID: 270136529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UITextureUnfilled2_17
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 157
-        width: 101
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 632de0c6ee1647843a4450711bc0beda
-      internalID: -505520858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UITextureUnfilled2_18
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 125
-        width: 101
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bd0f9978b6d7724dbcf17b596b40d42
-      internalID: 1863533986
+      spriteID: 33083da3e17c2a8c0800000000000000
+      internalID: -3989407387246952397
       vertices: []
       indices: 
       edges: []
@@ -586,7 +565,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ff0f93bc7ead3e04a909222e14c70cae
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -596,25 +575,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureUnfilled2_0: 4502794414300249250
-      UITextureUnfilled2_1: -1296805693
-      UITextureUnfilled2_10: 1592289945
-      UITextureUnfilled2_11: 1808936864
-      UITextureUnfilled2_12: 254556424
-      UITextureUnfilled2_13: -910105840
-      UITextureUnfilled2_14: 1654565363
-      UITextureUnfilled2_15: 262745947
-      UITextureUnfilled2_16: 270136529
-      UITextureUnfilled2_17: -505520858
-      UITextureUnfilled2_18: 1863533986
-      UITextureUnfilled2_2: 595199192
-      UITextureUnfilled2_3: 1918066690
-      UITextureUnfilled2_4: 981017020
-      UITextureUnfilled2_5: 306016698
-      UITextureUnfilled2_6: 1508688223
-      UITextureUnfilled2_7: 661085330
-      UITextureUnfilled2_8: 1154297208
-      UITextureUnfilled2_9: 1127756837
+      KaiSheet_0: 8441634532935560
+      KaiSheet_1: 8648235559568935598
+      KaiSheet_10: 3658916481125711447
+      KaiSheet_11: -6547842609240573978
+      KaiSheet_12: -8699963377197757600
+      KaiSheet_13: -3804059609052213728
+      KaiSheet_14: 3623351319809341860
+      KaiSheet_15: -3989407387246952397
+      KaiSheet_2: 3505177974600023567
+      KaiSheet_3: 7695057416484194242
+      KaiSheet_4: -4732493926186882371
+      KaiSheet_5: 1188773696456700939
+      KaiSheet_6: -7760030196792911223
+      KaiSheet_7: 7609303805334137554
+      KaiSheet_8: -432428350135951972
+      KaiSheet_9: -1415257523161130726
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

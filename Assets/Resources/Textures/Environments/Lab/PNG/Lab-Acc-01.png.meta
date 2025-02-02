@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: 0740e2bf74bbadf468b2670065826cd3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: -6144962276910136890
+    second: Lab-Acc-01_0
+  - first:
+      213: 7898149091540529666
+    second: Lab-Acc-01_1
+  - first:
+      213: -382550871374342966
+    second: Lab-Acc-01_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +171,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Lab-Acc-01_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 20
         y: 0
-        width: 437
-        height: 502
+        width: 21
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +186,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: 6c18896dd55b8baa0800000000000000
+      internalID: -6144962276910136890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Acc-01_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202f858a0ccdb9d60800000000000000
+      internalID: 7898149091540529666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab-Acc-01_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac457336208e0baf0800000000000000
+      internalID: -382550871374342966
       vertices: []
       indices: 
       edges: []
@@ -200,7 +250,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Lab-Acc-01_0: -6144962276910136890
+      Lab-Acc-01_1: 7898149091540529666
+      Lab-Acc-01_2: -382550871374342966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

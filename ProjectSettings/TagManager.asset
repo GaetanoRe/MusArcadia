@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PressKeyToInteract
   - FollowerAI
+  
   layers:
   - Default
   - TransparentFX
@@ -13,12 +14,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - UIBackground
   - Ground
   - PropsToShow
-  - 
   - Camera
-  - 
   - walltohide
   - 
   - 

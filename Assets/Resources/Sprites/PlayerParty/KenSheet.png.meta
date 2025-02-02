@@ -1,10 +1,55 @@
 fileFormatVersion: 2
-guid: c69940ba4e5a0f54c854f0d5d51ccb42
+guid: 587ac709c5a03d54da717176773c6fdb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4502794414300249250
-    second: UITextureUnfilled2_0
+      213: -5082529035782828050
+    second: KenSheet_0
+  - first:
+      213: 2196164193606493641
+    second: KenSheet_1
+  - first:
+      213: 2679337261491873298
+    second: KenSheet_2
+  - first:
+      213: -2285498314491107436
+    second: KenSheet_3
+  - first:
+      213: 4718154846036605428
+    second: KenSheet_4
+  - first:
+      213: 8843234221729158228
+    second: KenSheet_5
+  - first:
+      213: -6255569001342856464
+    second: KenSheet_6
+  - first:
+      213: -7526706723201834872
+    second: KenSheet_7
+  - first:
+      213: -1094517236934078324
+    second: KenSheet_8
+  - first:
+      213: 7797245554805287302
+    second: KenSheet_9
+  - first:
+      213: 2254525665026997694
+    second: KenSheet_10
+  - first:
+      213: 6732813564597451872
+    second: KenSheet_11
+  - first:
+      213: 8655762482014180708
+    second: KenSheet_12
+  - first:
+      213: 7021971306079532726
+    second: KenSheet_13
+  - first:
+      213: -4680281404150843417
+    second: KenSheet_14
+  - first:
+      213: 259498932434379303
+    second: KenSheet_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,419 +210,353 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureUnfilled2_0
+      name: KenSheet_0
       rect:
         serializedVersion: 2
-        x: 149
-        y: 8
-        width: 220
-        height: 215
+        x: 29
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2acbaf8b9a32d7e30800000000000000
-      internalID: 4502794414300249250
+      spriteID: eef4e8535ca3779b0800000000000000
+      internalID: -5082529035782828050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_1
+      name: KenSheet_1
       rect:
         serializedVersion: 2
-        x: 231
-        y: 230
-        width: 194
-        height: 88
+        x: 157
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f2f8fc53cfd84714cafc80c00f571a00
-      internalID: -1296805693
+      spriteID: 9c5e854c2b75a7e10800000000000000
+      internalID: 2196164193606493641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_2
+      name: KenSheet_2
       rect:
         serializedVersion: 2
-        x: 197
-        y: 272
-        width: 29
-        height: 29
+        x: 285
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d40f454e37d58f54a9cbb55a0f06d28b
-      internalID: 595199192
+      spriteID: 216e0b82b0bee2520800000000000000
+      internalID: 2679337261491873298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_3
+      name: KenSheet_3
       rect:
         serializedVersion: 2
-        x: 138
-        y: 271
-        width: 32
-        height: 27
+        x: 413
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c9e28138b4366cf488387473553e2cee
-      internalID: 1918066690
+      spriteID: 497e00e54674840e0800000000000000
+      internalID: -2285498314491107436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_4
+      name: KenSheet_4
       rect:
         serializedVersion: 2
-        x: 142
-        y: 304
-        width: 24
-        height: 35
+        x: 541
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 348747604d8a11846ba767fd118912f3
-      internalID: 981017020
+      spriteID: 4f9bc49a5d04a7140800000000000000
+      internalID: 4718154846036605428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_5
+      name: KenSheet_5
       rect:
         serializedVersion: 2
-        x: 198
-        y: 309
-        width: 28
-        height: 29
+        x: 669
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 58f392ba078fc4a448b37044f1bf9622
-      internalID: 306016698
+      spriteID: 4549eb3dbaa79ba70800000000000000
+      internalID: 8843234221729158228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_6
+      name: KenSheet_6
       rect:
         serializedVersion: 2
-        x: 195
-        y: 351
-        width: 30
-        height: 27
+        x: 797
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7ef7b0d62c8d3204fbea62d5d8add46a
-      internalID: 1508688223
+      spriteID: 0f2930ff221cf29a0800000000000000
+      internalID: -6255569001342856464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_7
+      name: KenSheet_7
       rect:
         serializedVersion: 2
-        x: 239
-        y: 321
-        width: 185
-        height: 74
+        x: 925
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b57f47298ea55db42a4004407836aa44
-      internalID: 661085330
+      spriteID: 880a20b0d14cb8790800000000000000
+      internalID: -7526706723201834872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_8
+      name: KenSheet_8
       rect:
         serializedVersion: 2
-        x: 58
-        y: 346
-        width: 122
-        height: 49
+        x: 1053
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0b47263d194887344ade8b9fdcb436a6
-      internalID: 1154297208
+      spriteID: c80900c3f5e7fc0f0800000000000000
+      internalID: -1094517236934078324
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_9
+      name: KenSheet_9
       rect:
         serializedVersion: 2
-        x: 25
-        y: 359
-        width: 21
-        height: 20
+        x: 1181
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a053673c8ff24d749875d4d2ad8dddaf
-      internalID: 1127756837
+      spriteID: 689a9a04581653c60800000000000000
+      internalID: 7797245554805287302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_10
+      name: KenSheet_10
       rect:
         serializedVersion: 2
-        x: 11
-        y: 402
-        width: 280
-        height: 93
+        x: 1309
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3a4b11de936692f469926ab0929b40a4
-      internalID: 1592289945
+      spriteID: ebd7fe8b52fa94f10800000000000000
+      internalID: 2254525665026997694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_11
+      name: KenSheet_11
       rect:
         serializedVersion: 2
-        x: 13
-        y: 269
-        width: 108
-        height: 21
+        x: 1437
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6eeeb4a5be8d47b4db5e2407c2c48a9d
-      internalID: 1808936864
+      spriteID: 06c33c8d342cf6d50800000000000000
+      internalID: 6732813564597451872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_12
+      name: KenSheet_12
       rect:
         serializedVersion: 2
-        x: 35
-        y: 323
-        width: 82
-        height: 12
+        x: 1565
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 37b4b9a228c11c3418e24df089275bfb
-      internalID: 254556424
+      spriteID: 465db900e127f1870800000000000000
+      internalID: 8655762482014180708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_13
+      name: KenSheet_13
       rect:
         serializedVersion: 2
-        x: 35
-        y: 307
-        width: 81
-        height: 12
+        x: 1693
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d702a5c189ae1ac49a7bd77b40cebee7
-      internalID: -910105840
+      spriteID: 6b63bd9e2bd037160800000000000000
+      internalID: 7021971306079532726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_14
+      name: KenSheet_14
       rect:
         serializedVersion: 2
-        x: 35
-        y: 291
-        width: 82
-        height: 12
+        x: 1821
+        y: 17
+        width: 56
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 26434bf0f75525d4887b1ed7647cd742
-      internalID: 1654565363
+      spriteID: 7e7f8b03cdc4c0fb0800000000000000
+      internalID: -4680281404150843417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UITextureUnfilled2_15
+      name: KenSheet_15
       rect:
         serializedVersion: 2
-        x: 36
-        y: 221
-        width: 100
-        height: 27
+        x: 1949
+        y: 17
+        width: 56
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b1ea442538579fb4f9deaea9c470f5eb
-      internalID: 262745947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UITextureUnfilled2_16
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 189
-        width: 101
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ca3e34e1bdc0f849876d0a0936277fa
-      internalID: 270136529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UITextureUnfilled2_17
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 157
-        width: 101
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 632de0c6ee1647843a4450711bc0beda
-      internalID: -505520858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UITextureUnfilled2_18
-      rect:
-        serializedVersion: 2
-        x: 36
-        y: 125
-        width: 101
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bd0f9978b6d7724dbcf17b596b40d42
-      internalID: 1863533986
+      spriteID: 722285777ece99300800000000000000
+      internalID: 259498932434379303
       vertices: []
       indices: 
       edges: []
@@ -586,7 +565,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ff0f93bc7ead3e04a909222e14c70cae
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -596,25 +575,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureUnfilled2_0: 4502794414300249250
-      UITextureUnfilled2_1: -1296805693
-      UITextureUnfilled2_10: 1592289945
-      UITextureUnfilled2_11: 1808936864
-      UITextureUnfilled2_12: 254556424
-      UITextureUnfilled2_13: -910105840
-      UITextureUnfilled2_14: 1654565363
-      UITextureUnfilled2_15: 262745947
-      UITextureUnfilled2_16: 270136529
-      UITextureUnfilled2_17: -505520858
-      UITextureUnfilled2_18: 1863533986
-      UITextureUnfilled2_2: 595199192
-      UITextureUnfilled2_3: 1918066690
-      UITextureUnfilled2_4: 981017020
-      UITextureUnfilled2_5: 306016698
-      UITextureUnfilled2_6: 1508688223
-      UITextureUnfilled2_7: 661085330
-      UITextureUnfilled2_8: 1154297208
-      UITextureUnfilled2_9: 1127756837
+      KenSheet_0: -5082529035782828050
+      KenSheet_1: 2196164193606493641
+      KenSheet_10: 2254525665026997694
+      KenSheet_11: 6732813564597451872
+      KenSheet_12: 8655762482014180708
+      KenSheet_13: 7021971306079532726
+      KenSheet_14: -4680281404150843417
+      KenSheet_15: 259498932434379303
+      KenSheet_2: 2679337261491873298
+      KenSheet_3: -2285498314491107436
+      KenSheet_4: 4718154846036605428
+      KenSheet_5: 8843234221729158228
+      KenSheet_6: -6255569001342856464
+      KenSheet_7: -7526706723201834872
+      KenSheet_8: -1094517236934078324
+      KenSheet_9: 7797245554805287302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

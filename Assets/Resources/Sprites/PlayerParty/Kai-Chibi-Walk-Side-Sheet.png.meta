@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 62cd8919b73c807479b26aa5609a271f
+guid: 5ae59e1c75f56944f9c1f81c1f35f490
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3900790762942661993
-    second: UITextureFilled2_0
+      213: 6318079316107251712
+    second: Kai-Chibi-Walk-Side-Sheet_0
+  - first:
+      213: -3973741905791372637
+    second: Kai-Chibi-Walk-Side-Sheet_1
+  - first:
+      213: 7164951858474980384
+    second: Kai-Chibi-Walk-Side-Sheet_2
+  - first:
+      213: -9005382097514012189
+    second: Kai-Chibi-Walk-Side-Sheet_3
+  - first:
+      213: -1438184206877705634
+    second: Kai-Chibi-Walk-Side-Sheet_4
+  - first:
+      213: 1811197204150081331
+    second: Kai-Chibi-Walk-Side-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -165,13 +180,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UITextureFilled2_0
+      name: Kai-Chibi-Walk-Side-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 437
-        height: 502
+        x: 4
+        y: 2
+        width: 20
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +195,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79a7da7e77b9dd9c0800000000000000
-      internalID: -3900790762942661993
+      spriteID: 000d053d9a35ea750800000000000000
+      internalID: 6318079316107251712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kai-Chibi-Walk-Side-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2b83c5ace6ad8c0800000000000000
+      internalID: -3973741905791372637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kai-Chibi-Walk-Side-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0241d25f0c50f6360800000000000000
+      internalID: 7164951858474980384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kai-Chibi-Walk-Side-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1e303e1b4760380800000000000000
+      internalID: -9005382097514012189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kai-Chibi-Walk-Side-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a3a7b651b8a0ce0800000000000000
+      internalID: -1438184206877705634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kai-Chibi-Walk-Side-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 0
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337db83d24aa22910800000000000000
+      internalID: 1811197204150081331
       vertices: []
       indices: 
       edges: []
@@ -200,7 +325,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      UITextureFilled2_0: -3900790762942661993
+      Kai-Chibi-Walk-Side-Sheet_0: 6318079316107251712
+      Kai-Chibi-Walk-Side-Sheet_1: -3973741905791372637
+      Kai-Chibi-Walk-Side-Sheet_2: 7164951858474980384
+      Kai-Chibi-Walk-Side-Sheet_3: -9005382097514012189
+      Kai-Chibi-Walk-Side-Sheet_4: -1438184206877705634
+      Kai-Chibi-Walk-Side-Sheet_5: 1811197204150081331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
