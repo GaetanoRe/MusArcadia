@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa8be43b167cb9428015ac6394127d1, type: 3}
   m_Name: Ken
   m_EditorClassIdentifier: 
-  statSheet: {fileID: 0}
-  enitiySprite: {fileID: 0}
+  statSheet: {fileID: 11400000, guid: 8d3aa0cc49f6d42498dee8d7204d4080, type: 2}
+  enitiySprite: {fileID: -964674144784055252, guid: a9d4e8c20a4bcc548a631bc32e26c1af, type: 3}
   strongAgainst: 
   weakAgainst: 
   nullAgainst: 

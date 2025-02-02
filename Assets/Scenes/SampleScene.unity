@@ -464,22 +464,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 28731206876337123, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 28731206876337123, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2789196621258241489, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2789196621258241489, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3812297551821358177, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
       propertyPath: m_Name
       value: BattleUI
@@ -489,14 +473,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4088980620952933258, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836479951416330777, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4836479951416330777, guid: 6ff6b24fb62e34d498ccff399791a12b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
