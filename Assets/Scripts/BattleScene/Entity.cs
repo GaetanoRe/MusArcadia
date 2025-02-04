@@ -60,8 +60,60 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
 
-        public float health;
-        public float mana;
+        public float health
+        {
+            get
+            {
+                return _health;
+            }
+            set
+            {
+                _health = value;
+                if (_health > maxHealth)
+                {
+                    _health = maxHealth;
+                }
+                if (_health < 0)
+                {
+                    _health = 0;
+                }
+            }
+
+        }
+        public float mana
+        {
+            get
+            {
+                return _mana;
+            }
+            set
+            {
+                _mana = value;
+                if (_mana > maxMana)
+                {
+                    _mana = maxMana;
+                }
+                if (_mana < 0)
+                {
+                    _mana = 0;
+                }
+            }
+        }
+
+        public void Initialize()
+        {
+            if (statSheet == null)
+            {
+                Debug.LogError($"{this.name} has no statSheet assigned!");
+                return;
+            }
+
+            health = maxHealth;
+            mana = maxMana;
+
+            Debug.Log($"{this.name} initialized - Health: {_health}/{maxHealth}, Mana: {_mana}/{maxMana}");
+        }
+
 
         public virtual void takeDamage(float amount){
             health -= amount;

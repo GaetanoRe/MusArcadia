@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa8be43b167cb9428015ac6394127d1, type: 3}
   m_Name: Hina
   m_EditorClassIdentifier: 
-  statSheet: {fileID: 11400000, guid: 492f900c16262ae44a994de311d6892d, type: 2}
+  statSheet: {fileID: 11400000, guid: 4c5b82ca180613b47912e1220c386b5e, type: 2}
   enitiySprite: {fileID: -1895917243517629847, guid: 98a1e23e4238b324bb7ac4f7d993708f, type: 3}
   strongAgainst: 
   weakAgainst: 

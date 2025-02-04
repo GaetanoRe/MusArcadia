@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KaiUI_0: -1788837863547784554
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
@@ -17,15 +18,18 @@ namespace MusArcadia.Assets.Scripts.BattleScene
     public class BattleManager : MonoBehaviour
     {
         public BattleState state;
+
+        public int enemyPartySize;
         public int fullTurns { get; set; }
         public int halfTurns { get; set; }
 
+        public Transform playerPartyPos;
+        public Transform enemyPartyPos;
+
+        public int CameraOffSet;
+
         public List<Transform> playerPartyMemberPos;
         public List<Transform> enemyPartyMemberPos;
-        
-
-        public List<GameObject> playerPartyMembers{ get; set; }
-        public List<GameObject> enemyPartyMembers{ get; set; }
 
         private List<Entity> currentPartyTurn;
 
@@ -38,6 +42,8 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         void SetupBattle(){
 
         }
+
+
 
     }
 

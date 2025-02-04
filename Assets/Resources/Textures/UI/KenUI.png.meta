@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KenUI_0: -964674144784055252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

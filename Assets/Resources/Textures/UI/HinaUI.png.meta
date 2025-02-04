@@ -199,7 +199,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HinaUI_0: -1895917243517629847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
