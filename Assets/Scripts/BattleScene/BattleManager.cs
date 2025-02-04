@@ -19,6 +19,8 @@ namespace MusArcadia.Assets.Scripts.BattleScene
     {
         public BattleState state;
 
+        
+
         public int enemyPartySize;
         public int fullTurns { get; set; }
         public int halfTurns { get; set; }

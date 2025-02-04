@@ -3248,6 +3248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2669a545b0a74164da45af075d2a5202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseShader: {fileID: 0}
+  applyShader: {fileID: 0}
 --- !u!4 &491036480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6655246450791720451, guid: 90a7153cdde7ad242b39f6d770be75c6, type: 3}

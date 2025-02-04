@@ -6,17 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BattleScene.unity
-    guid: 064e848ac94f4994080f6ffbe2a463e1
-  - enabled: 0
-    path: Assets/Dev_Kevin/Scenes/OverWorld_DevK.unity
-    guid: 8516f3fa5a8a060469c2231c02287468
-  - enabled: 0
-    path: Assets/Dev_Kevin/Scenes/GameManager_DevK.unity
-    guid: 0091b87c328d1dd4186cb3903cda5c1d
-  - enabled: 0
     path: Assets/Dev_Kevin/Scenes/SceneManager_DevK.unity
     guid: 1615a02d27343d346addcaea894448af
+  - enabled: 1
+    path: Assets/Scenes/BattleScene.unity
+    guid: 064e848ac94f4994080f6ffbe2a463e1
   - enabled: 1
     path: Assets/Scenes/UIScene.unity
     guid: 4b4d44913562ed3498eb8f4518018a53
