@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Dev_Kevin/Scenes/SceneManager_DevK.unity
-    guid: 1615a02d27343d346addcaea894448af
-  - enabled: 1
     path: Assets/Scenes/BattleScene.unity
     guid: 064e848ac94f4994080f6ffbe2a463e1
+  - enabled: 1
+    path: Assets/Dev_Kevin/Scenes/SceneManager_DevK.unity
+    guid: 1615a02d27343d346addcaea894448af
   - enabled: 1
     path: Assets/Scenes/UIScene.unity
     guid: 4b4d44913562ed3498eb8f4518018a53
