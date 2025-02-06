@@ -21,7 +21,8 @@ namespace MusArcadia.Assets.Scripts.UI {
 
         public void OnFightButtonPressed()
         {
-
+            battleUI.turns -= 1;
+            battleUI.halfTurns -= 1;
         }
 
         public void OnItemButtonPressed()
@@ -65,6 +66,7 @@ namespace MusArcadia.Assets.Scripts.UI {
             magicPanel.gameObject.SetActive(false);
             actionPanel.gameObject.SetActive(true);
         }
+
     }
 
 }

@@ -152,7 +152,7 @@ namespace MusArcadia.Assets.Scripts.UI
             int loc = 0;
             foreach(var turn in Turns)
             {
-                if(loc > turns)
+                if(loc >= turns)
                 {
                     turn.gameObject.SetActive(false);
                 }
@@ -165,7 +165,7 @@ namespace MusArcadia.Assets.Scripts.UI
             loc = 0;
             foreach(var halfTurn in HalfTurns)
             {
-                if(loc > halfTurns)
+                if(loc >= halfTurns)
                 {
                     halfTurn.gameObject.SetActive(false);
                 }

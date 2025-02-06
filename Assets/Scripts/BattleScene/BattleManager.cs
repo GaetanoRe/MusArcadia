@@ -30,6 +30,9 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public int CameraOffSet;
 
+        public List<GameObject> playerPartyMemberPrefabs;
+        public List<GameObject> enemyPartyMemberPrefabs;
+
         public List<Transform> playerPartyMemberPos;
         public List<Transform> enemyPartyMemberPos;
 
