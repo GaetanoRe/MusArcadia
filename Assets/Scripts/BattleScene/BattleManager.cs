@@ -25,17 +25,6 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         public int fullTurns { get; set; }
         public int halfTurns { get; set; }
 
-        public Transform playerPartyPos;
-        public Transform enemyPartyPos;
-
-        public int CameraOffSet;
-
-        public List<GameObject> playerPartyMemberPrefabs;
-        public List<GameObject> enemyPartyMemberPrefabs;
-
-        public List<Transform> playerPartyMemberPos;
-        public List<Transform> enemyPartyMemberPos;
-
         private List<Entity> currentPartyTurn;
 
         private void Start()

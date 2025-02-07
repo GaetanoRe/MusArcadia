@@ -6,6 +6,18 @@ using UnityEngine.UI;
 namespace MusArcadia.Assets.Scripts.UI {
     public class ButtonController : MonoBehaviour
     {
+        public enum ButtonState
+        {
+            Nothing,
+            Fight,
+            UseItem,
+            CastMagic,
+            ViewParty,
+            Run
+        }
+
+        public ButtonState state = ButtonState.Nothing;
+
         public BattleManager battleManager;
 
         public BattleUI battleUI;
@@ -21,8 +33,11 @@ namespace MusArcadia.Assets.Scripts.UI {
 
         public void OnFightButtonPressed()
         {
-            battleUI.turns -= 1;
-            battleUI.halfTurns -= 1;
+            state = ButtonState.Fight;
+
+            // Wait for player to enact turn...
+
+            battleUI.setTurns();
         }
 
         public void OnItemButtonPressed()
@@ -46,7 +61,7 @@ namespace MusArcadia.Assets.Scripts.UI {
 
         public void OnRunButtonPressed()
         {
-
+            state = ButtonState.Run;
         }
 
         public void OnPartyBackPressed()
