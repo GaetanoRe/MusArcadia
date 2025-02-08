@@ -22,8 +22,6 @@ MonoBehaviour:
   menuScenes:
   - sceneAsset: {fileID: 102900000, guid: 0091b87c328d1dd4186cb3903cda5c1d, type: 3}
     sceneName: 
-  - sceneAsset: {fileID: 102900000, guid: 2929433b85103ab4ea79566a10cd909e, type: 3}
-    sceneName: 
   explorationScenes:
   - sceneAsset: {fileID: 102900000, guid: 0091b87c328d1dd4186cb3903cda5c1d, type: 3}
     sceneName: GameManager_DevK
