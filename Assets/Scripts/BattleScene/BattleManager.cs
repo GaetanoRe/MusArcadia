@@ -16,6 +16,13 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         End
     }
 
+    public enum Action{
+        Fight,
+        Item,
+        Magic,
+        Run
+    }
+
     public class BattleManager : MonoBehaviour
     {
         public BattleState state;
@@ -25,22 +32,43 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         public BattleUI battleUI;
         public EffectsManager effectsManager;
 
-        public List<EnemyPartyMemberInfo> enemyParty;
-        public List<PlayerPartyMemberInfo> playerParty;
+        public List<EnemyPartyMemberInfo> enemyPool; // The Pool of Possible Enemies in the Area.
+     
+        public List<PlayerPartyMemberInfo> playerParty; // The Player Party
 
-        public List<Entity> goesFirst;
+        public bool goesFirst; 
 
         private List<Entity> currentPartyTurn;
+        private List<EnemyPartyMemberInfo> enemyParty;
+
 
         private void Start()
         {
             state = BattleState.Start;
-            currentPartyTurn = goesFirst;
             SetupBattle();
+        }
+
+
+        void BattleLoop(){
+
         }
 
         void SetupBattle(){
             
+        }
+
+        void StartTurn(){
+            state = BattleState.Action;
+            
+        }
+
+        void TakeAction(Entity user, Entity target){
+
+        }
+
+        private void SetupEnemyParty(){
+            
+
         }
 
     }

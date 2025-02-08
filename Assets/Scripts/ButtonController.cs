@@ -30,6 +30,8 @@ namespace MusArcadia.Assets.Scripts.UI {
 
         public Image partyPanel;
 
+        public Image statusPanel;
+
 
         public void OnFightButtonPressed()
         {

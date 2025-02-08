@@ -62,6 +62,11 @@ namespace MusArcadia.Assets.Scripts.UI
         public List<Image> HalfTurns;
 
 
+        // Action Panel and Status Panel
+        public Image actionPanel;
+        public Image statusPanel;
+
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -174,6 +179,17 @@ namespace MusArcadia.Assets.Scripts.UI
                     halfTurn.gameObject.SetActive(true);
                 }
                 loc++;
+            }
+        }
+
+        public void hidePlayerUI(bool hide){
+            if (hide){
+                actionPanel.gameObject.SetActive(false);
+                statusPanel.gameObject.SetActive(false);
+            }
+            else{
+                actionPanel.gameObject.SetActive(true);
+                statusPanel.gameObject.SetActive(true);
             }
         }
 
