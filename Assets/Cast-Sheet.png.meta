@@ -924,7 +924,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cast-Sheet_0: -2380376101888919857
+      Cast-Sheet_1: -779457782847778727
+      Cast-Sheet_10: -6238309634695319450
+      Cast-Sheet_11: -4873704508112427464
+      Cast-Sheet_12: 8781645839516850487
+      Cast-Sheet_13: 1314934864924375608
+      Cast-Sheet_14: 5431198132582360405
+      Cast-Sheet_15: -1096934021052452599
+      Cast-Sheet_16: 3305296542231756093
+      Cast-Sheet_17: 680578757154192563
+      Cast-Sheet_18: 7097483280826895200
+      Cast-Sheet_19: -418412329404913908
+      Cast-Sheet_2: -1004758980969103662
+      Cast-Sheet_20: -7650140368582497742
+      Cast-Sheet_21: -6315435633559083456
+      Cast-Sheet_22: -1626115766599618882
+      Cast-Sheet_23: -4926090059621238698
+      Cast-Sheet_24: -4178627048865067631
+      Cast-Sheet_25: 4434652112393608318
+      Cast-Sheet_26: 2428352795398512988
+      Cast-Sheet_27: 6269395324874902062
+      Cast-Sheet_28: 752130286724610497
+      Cast-Sheet_29: -5276915937752645961
+      Cast-Sheet_3: -924387013245800797
+      Cast-Sheet_4: -589709154424229344
+      Cast-Sheet_5: -2491184583051311702
+      Cast-Sheet_6: 2521876245108116445
+      Cast-Sheet_7: 7049305254360166273
+      Cast-Sheet_8: -136698260496956551
+      Cast-Sheet_9: 7123718633436985452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
