@@ -349,7 +349,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KenStrike-Weapon-Behind_0: 9136583764729659957
+      KenStrike-Weapon-Behind_1: -5392995580657863939
+      KenStrike-Weapon-Behind_2: 8020991398907339882
+      KenStrike-Weapon-Behind_3: 7981251141291390421
+      KenStrike-Weapon-Behind_4: 4027786908165946212
+      KenStrike-Weapon-Behind_5: 5380608046519918686
+      KenStrike-Weapon-Behind_6: 8759029192409802942
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

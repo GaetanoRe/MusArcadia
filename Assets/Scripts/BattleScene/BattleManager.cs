@@ -34,12 +34,15 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public List<EnemyPartyMemberInfo> enemyPool; // The Pool of Possible Enemies in the Area.
      
-        public List<PlayerPartyMemberInfo> playerParty; // The Player Party
+        public Party playerParty; // The Player Party
+
+        public Party enemyParty; // The Enemy Party
+
 
         public bool goesFirst; 
 
         private List<Entity> currentPartyTurn;
-        private List<EnemyPartyMemberInfo> enemyParty;
+        private int enemyPartySize;
 
 
         private void Start()
@@ -54,7 +57,13 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
         void SetupBattle(){
+            enemyPartySize = UnityEngine.Random.Range(0, 7);
+
+            for(int i = 0; i < enemyPartySize; i++){
+                enemyParty.partyInfo[i] = enemyPool[UnityEngine.Random.Range(0, enemyPool.Count)];
+            }
             
+           
         }
 
         void StartTurn(){

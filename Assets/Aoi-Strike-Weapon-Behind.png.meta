@@ -349,7 +349,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Aoi-Strike-Weapon-Behind_0: 6564749046083229826
+      Aoi-Strike-Weapon-Behind_1: -6435563733693007425
+      Aoi-Strike-Weapon-Behind_2: 5284355213695027261
+      Aoi-Strike-Weapon-Behind_3: 6487887762774456547
+      Aoi-Strike-Weapon-Behind_4: -1407843498976266144
+      Aoi-Strike-Weapon-Behind_5: -9181214357625482618
+      Aoi-Strike-Weapon-Behind_6: -5187871043863792815
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

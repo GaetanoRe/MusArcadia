@@ -374,7 +374,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Kai-Strike-Weapon_0: -392507303962136408
+      Kai-Strike-Weapon_1: 3943359988560798640
+      Kai-Strike-Weapon_2: 1301414211037336374
+      Kai-Strike-Weapon_3: 341241314973674006
+      Kai-Strike-Weapon_4: -7195529517915181507
+      Kai-Strike-Weapon_5: 3706834457712147704
+      Kai-Strike-Weapon_6: -5403099608870184987
+      Kai-Strike-Weapon_7: 1276542527444877995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

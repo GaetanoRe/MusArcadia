@@ -374,7 +374,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Aoi-Strike-Weapon_0: 2619096110500452170
+      Aoi-Strike-Weapon_1: 1505783000766271295
+      Aoi-Strike-Weapon_2: -557912992948516578
+      Aoi-Strike-Weapon_3: -856857482245385665
+      Aoi-Strike-Weapon_4: 1578989217877801318
+      Aoi-Strike-Weapon_5: 8264381493981303297
+      Aoi-Strike-Weapon_6: 3824164425010934148
+      Aoi-Strike-Weapon_7: 831469799937268824
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

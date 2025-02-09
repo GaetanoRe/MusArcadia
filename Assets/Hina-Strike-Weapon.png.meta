@@ -424,7 +424,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hina-Strike-Weapon_0: 7788068456048040994
+      Hina-Strike-Weapon_1: 391480772205368878
+      Hina-Strike-Weapon_2: 5828654674111108910
+      Hina-Strike-Weapon_3: 2656746736752439631
+      Hina-Strike-Weapon_4: 7948496741374277544
+      Hina-Strike-Weapon_5: -305028707074198226
+      Hina-Strike-Weapon_6: -156152487803955384
+      Hina-Strike-Weapon_7: -1583436859594282225
+      Hina-Strike-Weapon_8: 451218252050516656
+      Hina-Strike-Weapon_9: -1042257823370422517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
