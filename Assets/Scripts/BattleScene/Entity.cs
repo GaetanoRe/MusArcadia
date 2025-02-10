@@ -12,18 +12,32 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             Burned,
             Plague,
             Frozen,
-            Paralysis
+            Paralysis,
+            Dazed
+        }
+
+        public enum StatBias{
+            None,
+            Constitution,
+            Dexterity,
+            Strength,
+            Intelligence,
+            Agility
+
+
         }
 
 
         private float _health;
         private float _mana;
         public Stats statSheet;
-        public Sprite enitiySprite;
+        public Sprite entitiySprite;
 
         public List<Magic.ElementType> strongAgainst;
         public List<Magic.ElementType> weakAgainst;
         public List<Magic.ElementType> nullAgainst;
+
+        public StatBias statBias;
 
         public StatusEffects status;
 
@@ -56,6 +70,12 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         public float magicalDefense{
             get{
                 return statSheet.intelligence * 1.20005f + statSheet.constitution * 1.35426f;
+            }
+        }
+
+        public float accuracy{
+            get{
+                return statSheet.dexterity * 0.522245f;
             }
         }
 
@@ -110,8 +130,11 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
             health = maxHealth;
             mana = maxMana;
+            reevalStats();
 
             Debug.Log($"{this.name} initialized - Health: {_health}/{maxHealth}, Mana: {_mana}/{maxMana}");
+
+
         }
 
 
@@ -120,8 +143,60 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             Debug.Log($"{this} took {amount} damage and now has {health}/{maxHealth} health.");
         }
 
+        public virtual bool critChanceRoll(){
+            float critChanceRoll = UnityEngine.Random.Range(0, 20);
+            return critChanceRoll > 17;
+        }
+
+        public virtual void reevalStats(){
+            for(int i = 0; i < statSheet.level; i++){
+                switch(statBias){
+                case StatBias.Constitution:
+                    statSheet.constitution++;;
+                    break;
+                case StatBias.Dexterity:
+                    statSheet.dexterity++; 
+                    break;
+                case StatBias.Strength:
+                    statSheet.strength++;
+                    break;
+                case StatBias.Intelligence:
+                    statSheet.intelligence++;
+                    break;
+                case StatBias.Agility:
+                    statSheet.agility++;
+                    break;
+                
+                }
+                statSheet.strength++;
+                statSheet.intelligence++;
+                statSheet.dexterity++;
+                statSheet.agility++;
+            }
+            
+        }
+
         public abstract void attack(Entity subject);
-        public abstract void castMagic(Entity subject, Magic spell);
+        public virtual void castMagic(Entity subject, Magic spell){
+            if(spell.defensive){
+                subject.takeDamage(UnityEngine.Random.Range(spell.minDamage * (statSheet.intelligence * 0.25f), spell.maxDamage * (statSheet.intelligence * 0.25f)) * -1f);
+            }
+            else{
+                if(spell.statusEffects != StatusEffects.None){
+                    float rollStatus = UnityEngine.Random.Range(0, 20);
+                    if(rollStatus > 10){
+                        subject.status = spell.statusEffects;
+                    }
+                }
+                float rollAccuracy = UnityEngine.Random.Range(0, 20) + accuracy;
+                if(rollAccuracy > 10 && !spell.defensive){
+                    subject.takeDamage(UnityEngine.Random.Range(spell.minDamage * (statSheet.intelligence * 0.25f), spell.maxDamage * (statSheet.intelligence * 0.25f)));
+                }
+            }
+            
+        }
+
+        public abstract void useItem(Entity subject, Consumable item);
         public abstract void run();
 
     }

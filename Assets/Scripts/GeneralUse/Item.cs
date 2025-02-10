@@ -54,6 +54,7 @@ namespace MusArcadia.Assets.Scripts.GeneralUse
         public float maxPhysDefenseBonus;
         public float minElementDefenseBonus;
         public float maxElementDefenseBonus;
+        public ArmorType armorType;
     }
 
    

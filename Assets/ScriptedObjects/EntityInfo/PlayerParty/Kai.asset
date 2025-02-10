@@ -19,5 +19,9 @@ MonoBehaviour:
   nullAgainst: 
   status: 0
   spellBook: []
-  health: 0
-  mana: 0
+  armorEquipped:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  weaponEquipped: {fileID: 0}

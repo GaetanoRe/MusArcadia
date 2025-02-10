@@ -32,6 +32,11 @@ namespace MusArcadia.Assets.Scripts.UI {
 
         public Image statusPanel;
 
+    
+
+
+
+        
 
         public void OnFightButtonPressed()
         {
@@ -44,12 +49,14 @@ namespace MusArcadia.Assets.Scripts.UI {
 
         public void OnItemButtonPressed()
         {
+            state = ButtonState.UseItem;
             itemPanel.gameObject.SetActive(true);
             actionPanel.gameObject.SetActive(false);
         }
 
         public void OnMagicButtonPressed()
         {
+            state = ButtonState.CastMagic;
             magicPanel.gameObject.SetActive(true);
             actionPanel.gameObject.SetActive(false);
         }
@@ -68,18 +75,21 @@ namespace MusArcadia.Assets.Scripts.UI {
 
         public void OnPartyBackPressed()
         {
+            state = ButtonState.Nothing;
             partyPanel.gameObject.SetActive(false);
             actionPanel.gameObject.SetActive(true);
         }
 
         public void OnItemsBackPressed()
         {
+            state = ButtonState.Nothing;
             itemPanel.gameObject.SetActive(false);
             actionPanel.gameObject.SetActive(true);
         }
 
         public void OnMagicBackPressed()
         {
+            state = ButtonState.Nothing;
             magicPanel.gameObject.SetActive(false);
             actionPanel.gameObject.SetActive(true);
         }

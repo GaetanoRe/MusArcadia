@@ -10,6 +10,7 @@ namespace MusArcadia.Assets.Scripts.UI
 {
     public class BattleUI : MonoBehaviour
     {
+        public Action action;
         public int turns;
         public int halfTurns;
         public int maxTurns;
@@ -89,7 +90,7 @@ namespace MusArcadia.Assets.Scripts.UI
             PartyMaxHealth = new float[partyInfo.Count];
             PartyMaxMana = new float[partyInfo.Count];
             characterName.text = currentTurn.name.ToUpper();
-            characterSprite.sprite = currentTurn.enitiySprite;
+            characterSprite.sprite = currentTurn.entitiySprite;
             level.text = "LV " + currentTurn.statSheet.level;
 
 
@@ -129,7 +130,7 @@ namespace MusArcadia.Assets.Scripts.UI
                     // Update Graphics and Textboxes...
                     partyNames[loc].text = partyMemberInfo.name.ToUpper();
                     partyLevels[loc].text = "LV " + partyMemberInfo.statSheet.level;
-                    partyImages[loc].sprite = partyMemberInfo.enitiySprite;
+                    partyImages[loc].sprite = partyMemberInfo.entitiySprite;
                     PartyMaxHealth[loc] = partyMemberInfo.maxHealth;
                     PartyMaxMana[loc] = partyMemberInfo.maxMana;
                     healthInfo[loc].text = partyMemberInfo.health + "/" + PartyMaxHealth[loc];

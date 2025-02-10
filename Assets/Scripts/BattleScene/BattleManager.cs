@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MusArcadia.Assets.Scripts.UI;
 using MusArcadia.Assets.Scripts.BattleScene;
 using UnityEngine;
+using MusArcadia.Assets.Scripts.GeneralUse;
 
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
@@ -57,27 +58,44 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
         void SetupBattle(){
-            enemyPartySize = UnityEngine.Random.Range(0, 7);
-
-            for(int i = 0; i < enemyPartySize; i++){
-                enemyParty.partyInfo[i] = enemyPool[UnityEngine.Random.Range(0, enemyPool.Count)];
-            }
+            
+            SetupEnemyParty();
+            playerParty.Initialize();
             
            
         }
 
         void StartTurn(){
-            state = BattleState.Action;
+            state = BattleState.Idle;
+
             
         }
 
-        void TakeAction(Entity user, Entity target){
-
+        void TakeAction(Entity user, Entity target, Action action, Magic spell, Consumable item){
+            switch(action){
+                case Action.Fight:
+                    user.attack(target);
+                    break;
+                case Action.Magic:
+                    user.castMagic(target, spell);
+                    break;
+                case Action.Item:
+                    user.useItem(target, item);
+                    break;
+                case Action.Run:
+                    Application.Quit();
+                    break;
+            }
         }
 
         private void SetupEnemyParty(){
             
+            float partySize = UnityEngine.Random.Range(0, 7);
+            for(int i = 0; i < partySize; i++){
+                enemyParty.partyInfo[i] = enemyPool[UnityEngine.Random.Range(0, enemyPool.Count)];
+            }
 
+            enemyParty.Initialize();
         }
 
     }

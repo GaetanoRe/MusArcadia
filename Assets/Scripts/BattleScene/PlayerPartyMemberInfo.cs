@@ -9,6 +9,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene
     [CreateAssetMenu(fileName = "New Player Party Member", menuName = "Entity/Player Party Member")]
     public class PlayerPartyMemberInfo : Entity
     {
+        
         private float _exp;
         public float exp{ get{
             return _exp;
@@ -27,19 +28,56 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             }
         }
 
+        public List<Armor> armorEquipped;
+        public Weapon weaponEquipped;
+        public 
+
         void Start()
         {
             
         }
 
         public override void attack(Entity subject){
-            /**if(subject is EnemyPartyMember){
-                subject.takeDamage(meleeDamage);
-            }**/
+            if(subject is EnemyPartyMemberInfo){
+                float allOutDamage = 0;
+                if(weaponEquipped != null){
+                    allOutDamage = meleeDamage;
+                }
+                else{
+                    allOutDamage = meleeDamage + UnityEngine.Random.Range(weaponEquipped.minPhysDamageBonus + weaponEquipped.minElementDamage, 
+                weaponEquipped.maxPhysDamageBonus + weaponEquipped.maxElementDamage);
+                }
+                if(critChanceRoll()){
+                    allOutDamage *= 2;
+                    subject.status = StatusEffects.Dazed;
+                }
+
+                subject.takeDamage(allOutDamage);
+                
+            }
         }
 
         public override void castMagic(Entity subject, Magic spell){
+            if(spell.defensive && subject is PlayerPartyMemberInfo){
+                base.castMagic(subject, spell);
+            }
+            else if (subject is EnemyPartyMemberInfo){
+                base.castMagic(subject, spell);
+            }
+            
+        }
 
+        public override void useItem(Entity subject, Consumable item)
+        {
+            if(subject is PlayerPartyMemberInfo){
+                subject.health += item.healthHealed;
+                subject.mana += item.manaHealed;
+            }
+        }
+
+        public override void takeDamage(float amount)
+        {
+            base.takeDamage(amount);
         }
 
         public override void run()
@@ -49,7 +87,23 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public virtual void LevelUp(){
             statSheet.level++;
-            
+            reevalStats();
+        }
+
+        public float totalPhysicalDefense(){
+            float totalDefense = 0f;
+            foreach(Armor armor in armorEquipped){
+                totalDefense += UnityEngine.Random.Range(armor.minPhysDefenseBonus, armor.maxPhysDefenseBonus);
+            }
+            return totalDefense * 0.5234f;
+        }
+
+        public float totalElementalDefense(){
+            float totalDefense = 0f;
+            foreach(Armor armor in armorEquipped){
+                totalDefense += UnityEngine.Random.Range(armor.minElementDefenseBonus, armor.maxElementDefenseBonus);
+            }
+            return totalDefense * 0.5234f;
         }
     }
 }

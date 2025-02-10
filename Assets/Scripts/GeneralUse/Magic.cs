@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UnityEditorInternal;
 using UnityEngine;
+using static MusArcadia.Assets.Scripts.BattleScene.Entity;
 
 namespace MusArcadia.Assets.Scripts.GeneralUse
 {
@@ -29,5 +31,7 @@ namespace MusArcadia.Assets.Scripts.GeneralUse
         public float maxDamage;
         public float minDamage;
         public float manaCost;
+
+        public StatusEffects statusEffects;
     }
 }
