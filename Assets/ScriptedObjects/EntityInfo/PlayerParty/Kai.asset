@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Kai
   m_EditorClassIdentifier: 
   statSheet: {fileID: 11400000, guid: 9202ee53a8d5f9846abd71d6cee712bd, type: 2}
-  enitiySprite: {fileID: -1788837863547784554, guid: c7ef96d42280cca4c9b3d1b3c5121e78, type: 3}
+  entitySprite: {fileID: -1788837863547784554, guid: c7ef96d42280cca4c9b3d1b3c5121e78, type: 3}
+  entityModel: {fileID: -6363579622723588235, guid: b474e854eeddb5d4eb071070032ca801, type: 3}
   strongAgainst: 
   weakAgainst: 
   nullAgainst: 
+  statBias: 2
   status: 0
   spellBook: []
   armorEquipped:

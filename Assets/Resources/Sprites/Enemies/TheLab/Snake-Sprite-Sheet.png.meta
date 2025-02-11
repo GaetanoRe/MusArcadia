@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 8078d9e83397b5142bd8690acb1bd0bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5956765662303222834
+    second: Snake-Sprite-Sheet_0
+  - first:
+      213: 6704531035204828910
+    second: Snake-Sprite-Sheet_1
+  - first:
+      213: -4801645155541604871
+    second: Snake-Sprite-Sheet_2
+  - first:
+      213: 1428478006447137947
+    second: Snake-Sprite-Sheet_3
+  - first:
+      213: -261928592407163048
+    second: Snake-Sprite-Sheet_4
+  - first:
+      213: -3397613589145042738
+    second: Snake-Sprite-Sheet_5
+  - first:
+      213: 6408838907826189285
+    second: Snake-Sprite-Sheet_6
+  - first:
+      213: -2580980123229890213
+    second: Snake-Sprite-Sheet_7
+  - first:
+      213: 40536786560185437
+    second: Snake-Sprite-Sheet_8
+  - first:
+      213: 2995974940074437287
+    second: Snake-Sprite-Sheet_9
+  - first:
+      213: 4986337391355083208
+    second: Snake-Sprite-Sheet_10
+  - first:
+      213: 1073164641368590976
+    second: Snake-Sprite-Sheet_11
+  - first:
+      213: -5389370076272360414
+    second: Snake-Sprite-Sheet_12
+  - first:
+      213: -2084547141639902276
+    second: Snake-Sprite-Sheet_13
+  - first:
+      213: 1374421091775311175
+    second: Snake-Sprite-Sheet_14
+  - first:
+      213: -3132371885643586589
+    second: Snake-Sprite-Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 99
+        width: 79
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec30c20c031555da0800000000000000
+      internalID: -5956765662303222834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 99
+        width: 89
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eee37f254774b0d50800000000000000
+      internalID: 6704531035204828910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 99
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5a776db212d5db0800000000000000
+      internalID: -4801645155541604871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 99
+        width: 78
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b946dbfad29f2d310800000000000000
+      internalID: 1428478006447137947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 99
+        width: 71
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85f8d0d35517d5cf0800000000000000
+      internalID: -261928592407163048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 99
+        width: 77
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec048f6217049d0d0800000000000000
+      internalID: -3397613589145042738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 99
+        width: 77
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3beabf705c0f850800000000000000
+      internalID: 6408838907826189285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 99
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b59d986a0448e2cd0800000000000000
+      internalID: -2580980123229890213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54714b1ef3009000800000000000000
+      internalID: 40536786560185437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aaeb1ba557d39920800000000000000
+      internalID: 2995974940074437287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 3
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9b7fd4077033540800000000000000
+      internalID: 4986337391355083208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 3
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ac8423e85a4ee00800000000000000
+      internalID: 1073164641368590976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 3
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2248aa0487c1535b0800000000000000
+      internalID: -5389370076272360414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 3
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb6ff84b633213e0800000000000000
+      internalID: -2084547141639902276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 3
+        width: 77
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d621373bce21310800000000000000
+      internalID: 1374421091775311175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake-Sprite-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 3
+        width: 73
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e32bc3bd549784d0800000000000000
+      internalID: -3132371885643586589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Snake-Sprite-Sheet_0: -5956765662303222834
+      Snake-Sprite-Sheet_1: 6704531035204828910
+      Snake-Sprite-Sheet_10: 4986337391355083208
+      Snake-Sprite-Sheet_11: 1073164641368590976
+      Snake-Sprite-Sheet_12: -5389370076272360414
+      Snake-Sprite-Sheet_13: -2084547141639902276
+      Snake-Sprite-Sheet_14: 1374421091775311175
+      Snake-Sprite-Sheet_15: -3132371885643586589
+      Snake-Sprite-Sheet_2: -4801645155541604871
+      Snake-Sprite-Sheet_3: 1428478006447137947
+      Snake-Sprite-Sheet_4: -261928592407163048
+      Snake-Sprite-Sheet_5: -3397613589145042738
+      Snake-Sprite-Sheet_6: 6408838907826189285
+      Snake-Sprite-Sheet_7: -2580980123229890213
+      Snake-Sprite-Sheet_8: 40536786560185437
+      Snake-Sprite-Sheet_9: 2995974940074437287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

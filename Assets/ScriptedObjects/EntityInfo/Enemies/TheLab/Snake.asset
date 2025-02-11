@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77efa465da6e5d4b93821e025d3986d, type: 3}
+  m_Name: Snake
+  m_EditorClassIdentifier: 
+  statSheet: {fileID: 11400000, guid: e1225f92c79971d4daea4c362fe77da7, type: 2}
+  entitySprite: {fileID: 0}
+  entityModel: {fileID: -5956765662303222834, guid: 8078d9e83397b5142bd8690acb1bd0bb, type: 3}
+  strongAgainst: 
+  weakAgainst: 
+  nullAgainst: 
+  statBias: 4
+  status: 0
+  spellBook: []
+  type: 1
+  itemHeld: {fileID: 0}

@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Aoi
   m_EditorClassIdentifier: 
   statSheet: {fileID: 11400000, guid: 492f900c16262ae44a994de311d6892d, type: 2}
-  enitiySprite: {fileID: -8058398520164440548, guid: 0cf0935a9460213479d4e16b0f8b784e, type: 3}
+  entitySprite: {fileID: -8058398520164440548, guid: 0cf0935a9460213479d4e16b0f8b784e, type: 3}
+  entityModel: {fileID: 6990342069087587269, guid: 29ca9d151dd2a614bbd3b73e5fe9bc56, type: 3}
   strongAgainst: 
   weakAgainst: 
   nullAgainst: 
+  statBias: 4
   status: 0
   spellBook: []
   armorEquipped:

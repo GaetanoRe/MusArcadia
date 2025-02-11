@@ -67,6 +67,8 @@ namespace MusArcadia.Assets.Scripts.UI
         public Image actionPanel;
         public Image statusPanel;
 
+        public ButtonController buttonController;
+
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -90,7 +92,7 @@ namespace MusArcadia.Assets.Scripts.UI
             PartyMaxHealth = new float[partyInfo.Count];
             PartyMaxMana = new float[partyInfo.Count];
             characterName.text = currentTurn.name.ToUpper();
-            characterSprite.sprite = currentTurn.entitiySprite;
+            characterSprite.sprite = currentTurn.entitySprite;
             level.text = "LV " + currentTurn.statSheet.level;
 
 
@@ -114,6 +116,16 @@ namespace MusArcadia.Assets.Scripts.UI
         {
             healthSlider.value = currentTurn.health; 
             manaSlider.value = currentTurn.mana;
+
+            switch (buttonController.state)
+            {
+                case ButtonController.ButtonState.Fight:
+                    action = Action.Fight;
+                    break;
+                case ButtonController.ButtonState.Run:
+                    action = Action.Run; 
+                    break;
+            }
         }
 
         public void UpdatePartyInfo()
@@ -130,7 +142,7 @@ namespace MusArcadia.Assets.Scripts.UI
                     // Update Graphics and Textboxes...
                     partyNames[loc].text = partyMemberInfo.name.ToUpper();
                     partyLevels[loc].text = "LV " + partyMemberInfo.statSheet.level;
-                    partyImages[loc].sprite = partyMemberInfo.entitiySprite;
+                    partyImages[loc].sprite = partyMemberInfo.entitySprite;
                     PartyMaxHealth[loc] = partyMemberInfo.maxHealth;
                     PartyMaxMana[loc] = partyMemberInfo.maxMana;
                     healthInfo[loc].text = partyMemberInfo.health + "/" + PartyMaxHealth[loc];

@@ -31,7 +31,8 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         private float _health;
         private float _mana;
         public Stats statSheet;
-        public Sprite entitiySprite;
+        public Sprite entitySprite;
+        public Sprite entityModel;
 
         public List<Magic.ElementType> strongAgainst;
         public List<Magic.ElementType> weakAgainst;

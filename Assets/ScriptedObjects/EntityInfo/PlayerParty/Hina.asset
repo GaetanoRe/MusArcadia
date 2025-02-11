@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Hina
   m_EditorClassIdentifier: 
   statSheet: {fileID: 11400000, guid: 4c5b82ca180613b47912e1220c386b5e, type: 2}
-  enitiySprite: {fileID: -1895917243517629847, guid: 98a1e23e4238b324bb7ac4f7d993708f, type: 3}
+  entitySprite: {fileID: -1895917243517629847, guid: 98a1e23e4238b324bb7ac4f7d993708f, type: 3}
+  entityModel: {fileID: -6480592962172895393, guid: ccf490b1905e39440b9f51824d9bba25, type: 3}
   strongAgainst: 
   weakAgainst: 
   nullAgainst: 
+  statBias: 5
   status: 0
   spellBook: []
   armorEquipped:

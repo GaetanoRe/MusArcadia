@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Ken
   m_EditorClassIdentifier: 
   statSheet: {fileID: 11400000, guid: 8d3aa0cc49f6d42498dee8d7204d4080, type: 2}
-  enitiySprite: {fileID: -964674144784055252, guid: a9d4e8c20a4bcc548a631bc32e26c1af, type: 3}
+  entitySprite: {fileID: -964674144784055252, guid: a9d4e8c20a4bcc548a631bc32e26c1af, type: 3}
+  entityModel: {fileID: -6546583780899947138, guid: 07c0b4bddab7b784383db07b283b2a82, type: 3}
   strongAgainst: 
   weakAgainst: 
   nullAgainst: 
+  statBias: 3
   status: 0
   spellBook: []
   armorEquipped:

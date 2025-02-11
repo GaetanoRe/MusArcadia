@@ -33,35 +33,90 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         public BattleUI battleUI;
         public EffectsManager effectsManager;
 
-        public List<EnemyPartyMemberInfo> enemyPool; // The Pool of Possible Enemies in the Area.
+        public GameObject Selector;
+
+        public List<GameObject> enemyPool; // The Pool of Possible Enemies in the Area.
      
         public Party playerParty; // The Player Party
 
         public Party enemyParty; // The Enemy Party
 
+        public Action currentAction;
+
+        int selected = 0;
 
         public bool goesFirst; 
 
-        private List<Entity> currentPartyTurn;
+        public Party currentPartyTurn;
+        public Party currentOppTeam;
+        private Unit currentTurn;
+        private Unit currentTarget;
         private int enemyPartySize;
 
 
         private void Start()
         {
+            
             state = BattleState.Start;
             SetupBattle();
         }
 
+        private void Update()
+        {
+            currentAction = battleUI.action;
+            if (state != BattleState.Idle)
+            {
+                switch (currentAction)
+                {
+                    case Action.Fight:
+                        Selector.SetActive(true);
 
-        void BattleLoop(){
+                        // Ensure selected stays in bounds
+                        if (selected >= enemyParty.party.Count)
+                        {
+                            selected = 0;
+                        }
+
+                        currentTarget = enemyParty.party[selected];
+
+                        if (Input.GetKeyDown(KeyCode.RightArrow))
+                        {
+                            selected++;
+                            if (selected >= enemyParty.party.Count)
+                            {
+                                selected = 0; // Wrap around to first enemy
+                            }
+                        }
+                        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+                        {
+                            selected--;
+                            if (selected < 0)
+                            {
+                                selected = enemyParty.party.Count - 1; // Wrap around to last enemy
+                            }
+                        }
+
+                        // Check if selected is within bounds before using it
+                        if (selected >= 0 && selected < enemyParty.partyPos.Count)
+                        {
+                            Selector.transform.position = enemyParty.partyPos[selected].position + new Vector3(0, 2, 0);
+                        }
+
+                        break;
+                }
+                TakeAction(currentTurn.playerInfo, currentTarget.playerInfo, currentAction, null, null);
+            }
+
+
+
+        }
+    void BattleLoop(){
 
         }
 
         void SetupBattle(){
             
             SetupEnemyParty();
-            playerParty.Initialize();
-            
            
         }
 
@@ -88,11 +143,24 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             }
         }
 
-        private void SetupEnemyParty(){
-            
-            float partySize = UnityEngine.Random.Range(0, 7);
-            for(int i = 0; i < partySize; i++){
-                enemyParty.partyInfo[i] = enemyPool[UnityEngine.Random.Range(0, enemyPool.Count)];
+        void SetupEnemyParty()
+        {
+
+            int partySize = UnityEngine.Random.Range(1, 4); // Random number of enemies (e.g., 1 to 3)
+
+            for (int i = 0; i < partySize; i++)
+            {
+                // Pick a random enemy prefab
+                GameObject enemyPrefab = enemyPool[UnityEngine.Random.Range(0, enemyPool.Count)];
+                GameObject enemyGO = Instantiate(enemyPrefab, enemyParty.transform);
+
+                // Get the `Unit` component and add to `enemyParty`
+                Unit enemyUnit = enemyGO.GetComponent<Unit>();
+                if (enemyUnit != null)
+                {
+                    enemyParty.party.Add(enemyUnit);
+                    enemyUnit.transform.position = enemyParty.partyPos[i].position;
+                }
             }
 
             enemyParty.Initialize();
