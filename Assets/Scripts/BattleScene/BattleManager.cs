@@ -64,6 +64,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         private void Update()
         {
             currentAction = battleUI.action;
+            Selector.SetActive(false);
             if (state != BattleState.Idle)
             {
                 switch (currentAction)
@@ -95,16 +96,36 @@ namespace MusArcadia.Assets.Scripts.BattleScene
                                 selected = enemyParty.party.Count - 1; // Wrap around to last enemy
                             }
                         }
-
+                        
                         // Check if selected is within bounds before using it
                         if (selected >= 0 && selected < enemyParty.partyPos.Count)
                         {
                             Selector.transform.position = enemyParty.partyPos[selected].position + new Vector3(0, 2, 0);
                         }
+                        currentTarget = enemyParty.party[selected];
+
+                        if (Input.GetKeyDown(KeyCode.Space))
+{
+    if (currentTurn?.playerInfo == null)
+    {
+        Debug.LogError("currentTurn.playerInfo is NULL!");
+        return;
+    }
+
+    if (currentTarget?.playerInfo == null)
+    {
+        Debug.LogError("currentTarget.playerInfo is NULL!");
+        return;
+    }
+
+    Debug.Log($"Attempting to call TakeAction(): {currentTurn.playerInfo.name} attacks {currentTarget.playerInfo.name}");
+    TakeAction(currentTurn.playerInfo, currentTarget.playerInfo, currentAction, null, null);
+}
 
                         break;
+
                 }
-                TakeAction(currentTurn.playerInfo, currentTarget.playerInfo, currentAction, null, null);
+                
             }
 
 
@@ -120,28 +141,51 @@ namespace MusArcadia.Assets.Scripts.BattleScene
            
         }
 
-        void StartTurn(){
-            state = BattleState.Idle;
+        void StartTurn()
+{
+    if (playerParty.party.Count == 0)
+    {
+        Debug.LogError("Player party is EMPTY! Cannot start turn.");
+        return;
+    }
 
-            
-        }
+    currentTurn = playerParty.party[0]; // Assign the first player unit
+
+    if (currentTurn == null)
+    {
+        Debug.LogError("currentTurn is NULL after assigning!");
+        return;
+    }
+
+    if (currentTurn.playerInfo == null)
+    {
+        Debug.LogError($"currentTurn assigned to {currentTurn.name}, but playerInfo is NULL!");
+        return;
+    }
+
+    Debug.Log($"Starting turn for {currentTurn.name}, entity: {currentTurn.playerInfo.name}");
+    state = BattleState.Idle;
+}
+
 
         void TakeAction(Entity user, Entity target, Action action, Magic spell, Consumable item){
-            switch(action){
-                case Action.Fight:
-                    user.attack(target);
-                    break;
-                case Action.Magic:
-                    user.castMagic(target, spell);
-                    break;
-                case Action.Item:
-                    user.useItem(target, item);
-                    break;
-                case Action.Run:
-                    Application.Quit();
-                    break;
-            }
-        }
+    Debug.Log($"{user.name} is executing {action} on {target.name}!");
+    switch(action){
+        case Action.Fight:
+            user.attack(target);
+            break;
+        case Action.Magic:
+            user.castMagic(target, spell);
+            break;
+        case Action.Item:
+            user.useItem(target, item);
+            break;
+        case Action.Run:
+            Debug.Log("Exiting game.");
+            Application.Quit();
+            break;
+    }
+}
 
         void SetupEnemyParty()
         {

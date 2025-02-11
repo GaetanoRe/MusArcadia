@@ -38,24 +38,25 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         }
 
         public override void attack(Entity subject){
-            if(subject is EnemyPartyMemberInfo){
-                float allOutDamage = 0;
-                if(weaponEquipped != null){
-                    allOutDamage = meleeDamage;
-                }
-                else{
-                    allOutDamage = meleeDamage + UnityEngine.Random.Range(weaponEquipped.minPhysDamageBonus + weaponEquipped.minElementDamage, 
-                weaponEquipped.maxPhysDamageBonus + weaponEquipped.maxElementDamage);
-                }
-                if(critChanceRoll()){
-                    allOutDamage *= 2;
-                    subject.status = StatusEffects.Dazed;
-                }
-
-                subject.takeDamage(allOutDamage);
-                
-            }
+    if(subject is EnemyPartyMemberInfo){
+        Debug.Log($"{this.name} is attacking {subject.name}!");
+        float allOutDamage = meleeDamage;
+        if(weaponEquipped != null){
+            allOutDamage += UnityEngine.Random.Range(weaponEquipped.minPhysDamageBonus + weaponEquipped.minElementDamage, 
+            weaponEquipped.maxPhysDamageBonus + weaponEquipped.maxElementDamage);
         }
+
+        if(critChanceRoll()){
+            allOutDamage *= 2;
+            subject.status = StatusEffects.Dazed;
+            Debug.Log("Critical hit!");
+        }
+
+        Debug.Log($"Damage calculated: {allOutDamage}");
+        subject.takeDamage(allOutDamage);
+    }
+}
+
 
         public override void castMagic(Entity subject, Magic spell){
             if(spell.defensive && subject is PlayerPartyMemberInfo){

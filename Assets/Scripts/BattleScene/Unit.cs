@@ -33,6 +33,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene{
         {
             if (playerInfo != null)
             {
+                playerInfo.Initialize();
                 dead = false;
                 gameObject.SetActive(true);
                 level = playerInfo.statSheet.level;
@@ -60,6 +61,13 @@ namespace MusArcadia.Assets.Scripts.BattleScene{
         void Update()
         {
             gameObject.SetActive(!dead);
+
+            currentHealth = playerInfo.health;
+            currentMana = playerInfo.mana;
+
+            if(currentHealth <= 0){
+                dead = true;
+            }
         }
     }
 
