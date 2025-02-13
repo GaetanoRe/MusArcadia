@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3212552398007187952
+--- !u!1001 &1441702023076377044
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5276662836865965685, guid: b366e67e10c4609479d4dd7b192e436b, type: 3}
       propertyPath: m_Name
-      value: Aoi Variant
+      value: Aoi
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -58,19 +58,19 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public float meleeDamage {
             get{
-                return statSheet.strength * 3.005f;
+                return statSheet.strength * 0.4005f;
             }
         }
 
         public float physicalDefense {
             get{
-                return statSheet.strength * 1.20005f + statSheet.constitution * 1.35426f;
+                return statSheet.strength * 0.40005f + statSheet.constitution * 0.25426f;
             }
         }
 
         public float magicalDefense{
             get{
-                return statSheet.intelligence * 1.20005f + statSheet.constitution * 1.35426f;
+                return statSheet.intelligence * 0.80005f + statSheet.constitution * 0.15426f;
             }
         }
 
@@ -195,6 +195,12 @@ namespace MusArcadia.Assets.Scripts.BattleScene
                 }
             }
             
+        }
+
+        public object ToString(){
+            object output = $"Name : {name}";
+
+            return output;
         }
 
         public abstract void useItem(Entity subject, Consumable item);

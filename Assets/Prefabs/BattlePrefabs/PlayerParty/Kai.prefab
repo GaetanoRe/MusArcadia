@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6930891382103731045
+--- !u!1001 &9115407818336884927
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,14 +11,10 @@ PrefabInstance:
     - target: {fileID: 346135908911064992, guid: b366e67e10c4609479d4dd7b192e436b, type: 3}
       propertyPath: playerInfo
       value: 
-      objectReference: {fileID: 11400000, guid: 72a8862d293fcf14698f279f1c963926, type: 2}
-    - target: {fileID: 346135908911064992, guid: b366e67e10c4609479d4dd7b192e436b, type: 3}
-      propertyPath: playerSprite
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 05f9ad87744deba40abd0b00e6ff5df4, type: 2}
     - target: {fileID: 4036924784757362425, guid: b366e67e10c4609479d4dd7b192e436b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.26
+      value: -0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4036924784757362425, guid: b366e67e10c4609479d4dd7b192e436b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -58,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5276662836865965685, guid: b366e67e10c4609479d4dd7b192e436b, type: 3}
       propertyPath: m_Name
-      value: Hina Variant
+      value: Kai
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

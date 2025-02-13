@@ -48,6 +48,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene{
                 playerRenderer = GetComponent<SpriteRenderer>();
                 playerTransform = GetComponent<Transform>();
                 playerRenderer.sprite = playerSprite;
+                name = playerInfo.name;
             }
 
             else
@@ -68,6 +69,11 @@ namespace MusArcadia.Assets.Scripts.BattleScene{
             if(currentHealth <= 0){
                 dead = true;
             }
+        }
+
+        void OnDestroy()
+        {
+            Debug.Log($"Unit {name} is being destroyed!");
         }
     }
 

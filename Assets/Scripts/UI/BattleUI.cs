@@ -5,6 +5,7 @@ using MusArcadia.Assets.Scripts.GeneralUse;
 using NUnit.Framework;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using Unity.VisualScripting;
 
 namespace MusArcadia.Assets.Scripts.UI
 {
@@ -89,26 +90,7 @@ namespace MusArcadia.Assets.Scripts.UI
                     partyMember.Initialize();
                 }
             }
-            PartyMaxHealth = new float[partyInfo.Count];
-            PartyMaxMana = new float[partyInfo.Count];
-            characterName.text = currentTurn.name.ToUpper();
-            characterSprite.sprite = currentTurn.entitySprite;
-            level.text = "LV " + currentTurn.statSheet.level;
-
-
-            
-            maxHealth = currentTurn.maxHealth;
-            maxMana = currentTurn.maxMana;
-
-            healthSlider.maxValue = maxHealth;
-            healthSlider.minValue = 0;
-
-            manaSlider.maxValue = maxMana;
-            manaSlider.minValue = 0;
-            
-
-            
-
+            UpdateUI();
 
         }
 
@@ -125,9 +107,30 @@ namespace MusArcadia.Assets.Scripts.UI
                 case ButtonController.ButtonState.Run:
                     action = Action.Run; 
                     break;
+                default:
+                    action = Action.None;
+                    break;
             }
         }
 
+        public void UpdateUI(){
+            PartyMaxHealth = new float[partyInfo.Count];
+            PartyMaxMana = new float[partyInfo.Count];
+            characterName.text = currentTurn.name.ToUpper();
+            characterSprite.sprite = currentTurn.entitySprite;
+            level.text = "LV " + currentTurn.statSheet.level;
+
+
+            
+            maxHealth = currentTurn.maxHealth;
+            maxMana = currentTurn.maxMana;
+
+            healthSlider.maxValue = maxHealth;
+            healthSlider.minValue = 0;
+
+            manaSlider.maxValue = maxMana;
+            manaSlider.minValue = 0;
+        }
         public void UpdatePartyInfo()
         {
             int loc = 0;
