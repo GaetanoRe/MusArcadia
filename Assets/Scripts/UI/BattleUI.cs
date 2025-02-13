@@ -68,6 +68,10 @@ namespace MusArcadia.Assets.Scripts.UI
         public Image actionPanel;
         public Image statusPanel;
 
+        public Image dialogBox;
+
+        public Text dialogMessage;
+
         public ButtonController buttonController;
 
 
@@ -209,7 +213,14 @@ namespace MusArcadia.Assets.Scripts.UI
             }
         }
 
+        public void showMessage(string message){
+            dialogBox.gameObject.SetActive(true);
+            dialogMessage.text = message;
+        }
 
+        public void hideMessageBox(){
+            dialogBox.gameObject.SetActive(false);
+        }
 
     }
 

@@ -93,6 +93,8 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         {
             state = BattleState.Idle;
             turn = 0;
+            fullTurns = currentPartyTurn.party.Count;
+            halfTurns = fullTurns;
             if(currentPartyTurn.Equals(playerParty))
             {
                 battleUI.hidePlayerUI(false);
@@ -113,34 +115,49 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         IEnumerator PlayerAction()
         {
-            battleUI.currentTurn = (PlayerPartyMemberInfo) playerParty.partyInfo[turn];
+            battleUI.currentTurn = (PlayerPartyMemberInfo)playerParty.partyInfo[turn];
             battleUI.UpdateUI();
             if (state != BattleState.Action) yield break;
 
-            while (currentAction == Action.None) // Wait for an action to be selected
+            bool turnComplete = false;
+
+            while (!turnComplete)
             {
                 currentAction = battleUI.action;
+                if (currentAction != Action.None)
+                {
+                    switch (currentAction)
+                    {
+                        case Action.Fight:
+                            Debug.Log($"Fight Selected");
+                            yield return SelectTarget();
+                            turnComplete = true; // Signal turn is complete
+                            break;
+
+                        case Action.Run:
+                            Debug.Log("Player chose to run.");
+                            state = BattleState.End; // Consider handling run logic here
+                            turnComplete = true; // Signal turn is complete
+                            break;
+
+                        // Add other cases (Item, Magic, etc.) here and set turnComplete = true; after they finish
+                        case Action.Magic:
+                            Debug.Log("Magic Selected");
+                            // Implement Magic selection and execution logic here
+                            yield return SelectTarget();
+                            turnComplete = true;
+                            break;
+                        case Action.Item:
+                            Debug.Log("Item Selected");
+                            // Implement Item selection and execution logic here
+                            turnComplete = true;
+                            break;
+                    }
+                    currentAction = Action.None; // Reset for the next turn. This is important!
+                }
                 yield return null;
             }
-
-            switch (currentAction)
-            {
-                case Action.Fight:
-                    Debug.Log($"Fight Selected");
-                    yield return SelectTarget(); // Call SelectTarget here!
-                    break;
-
-                case Action.Run:
-                    Debug.Log("Player chose to run.");
-                    state = BattleState.End; // Consider handling run logic here
-                    break;
-            }
-
-            currentAction = Action.None; // Reset for the next turn
-            if(fullTurns == 0 && halfTurns == 0){
-                yield return SwitchTeamTurn();
-            }
-
+            StartCoroutine(SwitchTeamTurn()); // Start the next turn
         }
 
 
@@ -168,13 +185,13 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
             while (!selected)
             {
-                if (Input.GetKeyDown(KeyCode.LeftArrow)) 
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
                 {
-                    selector = (selector - 1 + enemyParty.party.Count) % enemyParty.party.Count; // Wraps around
+                    selector = (selector - 1 + enemyParty.party.Count) % enemyParty.party.Count;
                 }
-                else if (Input.GetKeyDown(KeyCode.RightArrow)) 
+                else if (Input.GetKeyDown(KeyCode.RightArrow))
                 {
-                    selector = (selector + 1) % enemyParty.party.Count; // Wraps around
+                    selector = (selector + 1) % enemyParty.party.Count;
                 }
 
                 // Update Selector Position
@@ -184,22 +201,25 @@ namespace MusArcadia.Assets.Scripts.BattleScene
                 {
                     currentTarget = enemyParty.party[selector];
                     Debug.Log($"You selected {currentTarget.playerInfo.name}");
-                    selected = true;
+                    selected = true; // <--- This sets 'selected' to true, exiting the loop
                     Selector.SetActive(false);
-                    TakeAction(playerParty.partyInfo[turn],enemyParty.partyInfo[selector], null, null);
+                    TakeAction(playerParty.partyInfo[turn], enemyParty.partyInfo[selector], null, null);
+                    // No need to call SwitchTeamTurn here; PlayerAction handles that
                 }
+                yield return null; // Wait for next frame
             }
-             yield return null; // Wait for next frame
         }
 
 
 
         IEnumerator SwitchTeamTurn(){
             if(currentPartyTurn.Equals(playerParty)){
+                Debug.Log($"Switching to enemy Turn...");
                 currentPartyTurn = enemyParty;
                 currentOppTeam = playerParty;
             }
             else{
+                Debug.Log($"Switching to player turn...");
                 currentPartyTurn = playerParty;
                 currentOppTeam = enemyParty;
             }
@@ -213,7 +233,17 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             Debug.Log($"{user.name} is executing {currentAction} on {target.name}!");
             switch(currentAction){
             case Action.Fight:
-                user.attack(target);
+                HitStatus hitStatus = user.attack(target);
+                if(hitStatus == HitStatus.Hit){
+                    fullTurns--;
+                    halfTurns--;
+                }
+                else if(hitStatus == HitStatus.CriticalHit){
+                    fullTurns--;
+                }
+                else if(hitStatus == HitStatus.Miss){
+                    StartCoroutine(SwitchTeamTurn());
+                }
                 break;
             case Action.Magic:
                 user.castMagic(target, spell);

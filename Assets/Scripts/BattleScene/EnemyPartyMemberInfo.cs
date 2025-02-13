@@ -23,15 +23,20 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public Item itemHeld;
 
-        public override void attack(Entity subject){
+        public override HitStatus attack(Entity subject){
             if (subject is PlayerPartyMemberInfo){
                 float damage = UnityEngine.Random.Range(meleeDamage / 2, meleeDamage);
-                if(critChanceRoll()){
-                    damage *= 2;
-                    subject.status = StatusEffects.Dazed;
-                }
-                subject.takeDamage(damage);
+               float hitChance = UnityEngine.Random.Range(1, 20) + accuracy;
+            if(hitChance >= 19){
+                subject.takeDamage(damage * 2);
+                return HitStatus.CriticalHit;
             }
+            else if(hitChance >= 10 && hitChance < 19){
+                subject.takeDamage(damage);
+                return HitStatus.Hit;
+            }
+        }
+            return HitStatus.Miss;
         }
         public override void castMagic(Entity subject, Magic spell){
             if(type is EnemyType.Strategist || type is EnemyType.Healer){

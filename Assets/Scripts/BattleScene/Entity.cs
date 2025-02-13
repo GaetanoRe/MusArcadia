@@ -4,6 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 namespace MusArcadia.Assets.Scripts.BattleScene
 {
+
+    public enum HitStatus{
+        CriticalHit,
+        Hit,
+        Miss
+    }
     public abstract class Entity: ScriptableObject{
 
         public enum StatusEffects
@@ -37,6 +43,8 @@ namespace MusArcadia.Assets.Scripts.BattleScene
         public List<Magic.ElementType> strongAgainst;
         public List<Magic.ElementType> weakAgainst;
         public List<Magic.ElementType> nullAgainst;
+
+        public bool missed;
 
         public StatBias statBias;
 
@@ -177,7 +185,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             
         }
 
-        public abstract void attack(Entity subject);
+        public abstract HitStatus attack(Entity subject);
         public virtual void castMagic(Entity subject, Magic spell){
             if(spell.defensive){
                 subject.takeDamage(UnityEngine.Random.Range(spell.minDamage * (statSheet.intelligence * 0.25f), spell.maxDamage * (statSheet.intelligence * 0.25f)) * -1f);

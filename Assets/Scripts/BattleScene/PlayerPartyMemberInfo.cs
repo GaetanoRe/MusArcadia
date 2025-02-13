@@ -37,24 +37,27 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             
         }
 
-        public override void attack(Entity subject){
-    if(subject is EnemyPartyMemberInfo){
-        Debug.Log($"{this.name} is attacking {subject.name}!");
-        float allOutDamage = meleeDamage;
-        if(weaponEquipped != null){
-            allOutDamage += UnityEngine.Random.Range(weaponEquipped.minPhysDamageBonus + weaponEquipped.minElementDamage, 
-            weaponEquipped.maxPhysDamageBonus + weaponEquipped.maxElementDamage);
-        }
+        public override HitStatus attack(Entity subject){
+        if(subject is EnemyPartyMemberInfo){
+            Debug.Log($"{this.name} is attacking {subject.name}!");
+            float allOutDamage = meleeDamage;
+            if(weaponEquipped != null){
+                allOutDamage += UnityEngine.Random.Range(weaponEquipped.minPhysDamageBonus + weaponEquipped.minElementDamage, 
+                weaponEquipped.maxPhysDamageBonus + weaponEquipped.maxElementDamage);
+            }
 
-        if(critChanceRoll()){
-            allOutDamage *= 2;
-            subject.status = StatusEffects.Dazed;
-            Debug.Log("Critical hit!");
+            Debug.Log($"Damage calculated: {allOutDamage}");
+            float hitChance = UnityEngine.Random.Range(1, 20) + accuracy;
+            if(hitChance >= 19){
+                subject.takeDamage(allOutDamage * 2);
+                return HitStatus.CriticalHit;
+            }
+            else if(hitChance >= 10 && hitChance < 19){
+                subject.takeDamage(allOutDamage);
+                return HitStatus.Hit;
+            }
         }
-
-        Debug.Log($"Damage calculated: {allOutDamage}");
-        subject.takeDamage(allOutDamage);
-    }
+        return HitStatus.Miss;
 }
 
 
