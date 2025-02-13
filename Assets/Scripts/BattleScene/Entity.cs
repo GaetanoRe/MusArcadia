@@ -197,12 +197,6 @@ namespace MusArcadia.Assets.Scripts.BattleScene
             
         }
 
-        public object ToString(){
-            object output = $"Name : {name}";
-
-            return output;
-        }
-
         public abstract void useItem(Entity subject, Consumable item);
         public abstract void run();
 
