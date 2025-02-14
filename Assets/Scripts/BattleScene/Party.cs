@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using MusArcadia.Assets.Scripts.BattleScene;
+using MusArcadia.Assets.Scripts.GeneralUse;
 
 public class Party : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Party : MonoBehaviour
     public List<Unit> party = new List<Unit>(); // Stores Unit GameObjects
     public List<Transform> partyPos = new List<Transform>(); // Positions for party members
     public List<Entity> partyInfo = new List<Entity>(); // Stores Entity data
+
+    public List<Consumable> consumables;
     public void Initialize()
     {
         if (party == null || party.Count == 0)

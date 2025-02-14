@@ -18,9 +18,12 @@ MonoBehaviour:
   strongAgainst: 
   weakAgainst: 
   nullAgainst: 
+  missed: 0
   statBias: 5
   status: 0
-  spellBook: []
+  spellBook:
+  - {fileID: 11400000, guid: d4229f75695a9944fa52b6a8879e51d5, type: 2}
+  - {fileID: 11400000, guid: 22ae8562265c34a4683bd44b55ee9ac2, type: 2}
   armorEquipped:
   - {fileID: 0}
   - {fileID: 0}

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: IceShards
   m_EditorClassIdentifier: 
   defensive: 0
-  elementType: 0
-  name: 
+  elementType: 2
+  name: Ice Shard
   description: 
-  maxDamage: 0
-  minDamage: 0
-  manaCost: 0
+  maxDamage: 1
+  minDamage: 5
+  manaCost: 5
+  statusEffects: 3

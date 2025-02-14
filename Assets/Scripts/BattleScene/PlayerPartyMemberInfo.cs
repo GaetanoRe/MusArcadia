@@ -73,9 +73,11 @@ namespace MusArcadia.Assets.Scripts.BattleScene
 
         public override void useItem(Entity subject, Consumable item)
         {
-            if(subject is PlayerPartyMemberInfo){
+            if(subject is PlayerPartyMemberInfo && item.stack > 0){
                 subject.health += item.healthHealed;
                 subject.mana += item.manaHealed;
+                item.stack--;
+                
             }
         }
 

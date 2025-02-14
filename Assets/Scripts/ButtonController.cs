@@ -1,4 +1,5 @@
 using MusArcadia.Assets.Scripts.BattleScene;
+using MusArcadia.Assets.Scripts.GeneralUse;
 using MusArcadia.Assets.Scripts.UI;
 using UnityEngine;
 using UnityEngine.UI;
@@ -92,6 +93,10 @@ namespace MusArcadia.Assets.Scripts.UI {
             state = ButtonState.Nothing;
             magicPanel.gameObject.SetActive(false);
             actionPanel.gameObject.SetActive(true);
+        }
+
+        public void OnSpellSelected(){
+            
         }
 
     }

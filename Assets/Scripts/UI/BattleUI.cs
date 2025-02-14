@@ -6,6 +6,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Unity.VisualScripting;
+using Unity.Cinemachine;
 
 namespace MusArcadia.Assets.Scripts.UI
 {
@@ -18,7 +19,10 @@ namespace MusArcadia.Assets.Scripts.UI
 
         // Battle Logic Info
         public PlayerPartyMemberInfo currentTurn;
+        
+
         public List<PlayerPartyMemberInfo> partyInfo;
+
         public List<GameObject> partyMembers;
 
         // Status Panel Info
@@ -75,9 +79,18 @@ namespace MusArcadia.Assets.Scripts.UI
         public ButtonController buttonController;
 
 
+        //  Visual Flair :)
+        public CinemachineCamera turnCam;
+
+        public Party party;
+
+        int turnIndex;
+
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
+            turnIndex = 0;
             if (currentTurn == null)
             {
                 Debug.LogError("Current turn is not assigned in BattleUI.");
@@ -85,6 +98,8 @@ namespace MusArcadia.Assets.Scripts.UI
             }
 
             setTurns();
+
+            
 
             currentTurn.Initialize();
             foreach(var partyMember in partyInfo)
@@ -95,6 +110,7 @@ namespace MusArcadia.Assets.Scripts.UI
                 }
             }
             UpdateUI();
+            SetCameraPosition();
 
         }
 
@@ -114,6 +130,18 @@ namespace MusArcadia.Assets.Scripts.UI
                 default:
                     action = Action.None;
                     break;
+            }
+        }
+
+        void SetCameraPosition()
+        {
+            if (party != null && party.partyPos != null && turnIndex >= 0 && turnIndex < party.partyPos.Count && turnCam != null)
+            {
+                turnCam.Target.TrackingTarget = party.partyPos[turnIndex];
+            }
+            else
+            {
+                Debug.LogError("Invalid turnIndex or party/partyPos/turnCam not initialized.");
             }
         }
 

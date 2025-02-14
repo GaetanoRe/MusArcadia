@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
+using UnityEditor.UI;
 using UnityEngine;
 
 namespace MusArcadia.Assets.Scripts.GeneralUse
@@ -26,6 +28,7 @@ namespace MusArcadia.Assets.Scripts.GeneralUse
     public class Consumable : Item{
         public float healthHealed; 
         public float manaHealed;
+        public int stack;
 
     }
 
