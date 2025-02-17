@@ -244,6 +244,7 @@ namespace MusArcadia.Assets.Scripts.BattleScene
                 else if(hitStatus == HitStatus.Miss){
                     StartCoroutine(SwitchTeamTurn());
                 }
+                battleUI.UpdateUI();
                 break;
             case Action.Magic:
                 user.castMagic(target, spell);
